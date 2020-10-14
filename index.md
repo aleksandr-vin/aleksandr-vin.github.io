@@ -1,11 +1,11 @@
 
 # Table of Contents
 
-1.  [Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#org54147e1)
+1.  [Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgb463961)
 
 
 
-<a id="org54147e1"></a>
+<a id="orgb463961"></a>
 
 # Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
@@ -19,6 +19,6 @@ And again I have the same mood here, I think. I'm home alone, listening blues.
 Here is a link to a note I made last evening about
 [resizing ext4 partition of a guest Ubuntu on vmdk on ESXi 6.0](https://stackoverflow.com/a/64361331/468942).
 I spent some time finding out how to atually resize the disk and wrote down
-the steps to remember, and now I have the **aleksandr.vin**
+the steps to remember, and now I have mine **aleksandr.vin**
 domain name and a site running on github pages.
 

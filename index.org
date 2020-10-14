@@ -17,5 +17,5 @@
   Here is a link to a note I made last evening about
   [[https://stackoverflow.com/a/64361331/468942][resizing ext4 partition of a guest Ubuntu on vmdk on ESXi 6.0]].
   I spent some time finding out how to atually resize the disk and wrote down
-  the steps to remember, and now I have the *aleksandr.vin*
+  the steps to remember, and now I have mine *aleksandr.vin*
   domain name and a site running on github pages.
