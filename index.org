@@ -1,0 +1,11 @@
+#+TITLE: aleksandr.vin
+#+AUTHOR: Aleksandr Vinokurov
+#+DATE: 2020-10-14
+
+* Notes
+
+** TODO Write first note 
+   SCHEDULED: <2020-10-15>
+
+** NEXT Add second note
+   SCHEDULED: <2020-10-15>
