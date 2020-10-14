@@ -2,10 +2,65 @@
 #+AUTHOR: Aleksandr Vinokurov
 #+DATE: 2020-10-14
 
-* Notes
+* Hello first code sampl [2020-10-15]
+  :PROPERTIES:
+  :Title:    Goldberg Variations
+  :Composer: J.S. Bach
+  :Artist:   Glenn Gould
+  :Publisher: Deutsche Grammophon
+  :NDisks:   1
+  :END:
 
-** TODO Write first note 
-   SCHEDULED: <2020-10-15>
+#+BEGIN_SRC emacs-lisp
+  ```
+      ;; This exports with line number 20.
+      (message "This is line 21")
+  ```
+#+END_SRC
 
-** NEXT Add second note
-   SCHEDULED: <2020-10-15>
+* And an example [2020-10-15]
+
+#+BEGIN_EXAMPLE
+  Some example from a text file.
+#+END_EXAMPLE
+
+* Some verse
+
+#+BEGIN_VERSE
+ Great clouds overhead
+ Tiny black birds rise and fall
+ Snow covers Emacs
+
+    ---AlexSchroeder
+#+END_VERSE
+
+* Some quote
+
+  #+BEGIN_QUOTE
+  Everything should be made as simple as possible,
+  but not any simpler ---Albert Einstein
+  #+END_QUOTE
+  
+
+* Style
+
+  *bold*, /italic/, _underlined_, =verbatim= and ~code~, and, if you must, +strike-through+
+
+* LaTeX
+
+  \begin{equation}                        % arbitrary environments,
+  x=\sqrt{b}                              % even tables, figures
+  \end{equation}                          % etc
+
+* Img
+
+  #+CAPTION: This is the caption for the next figure link (or table)
+  #+NAME:   fig:SED-HR4049
+  [[./img/Untitled.png]]
+
+* Table
+
+  | Name  | Phone | Age |
+  |-------+-------+-----|
+  | Peter |  1234 |  17 |
+  | Anna  |  4321 |  25 |
