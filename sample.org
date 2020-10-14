@@ -12,10 +12,8 @@
   :END:
 
 #+BEGIN_SRC emacs-lisp
-  ```
-      ;; This exports with line number 20.
-      (message "This is line 21")
-  ```
+  ;; This exports with line number 20.
+  (message "This is line 21")
 #+END_SRC
 
 * And an example [2020-10-15]

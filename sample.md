@@ -1,35 +1,33 @@
 
 # Table of Contents
 
-1.  [Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgd936619)
-2.  [And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#org5875ff2)
-3.  [Some verse](#org0706135)
-4.  [Some quote](#orgdf9fe05)
-5.  [Style](#orgf585070)
-6.  [LaTeX](#org8ff973c)
-7.  [Img](#org0ca9904)
-8.  [Table](#orgcce5548)
+1.  [Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgab309a0)
+2.  [And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgcef24cc)
+3.  [Some verse](#org07d676e)
+4.  [Some quote](#org63fd4f7)
+5.  [Style](#org9fceb32)
+6.  [LaTeX](#org015c556)
+7.  [Img](#org4e5c622)
+8.  [Table](#orgde35816)
 
 
 
-<a id="orgd936619"></a>
+<a id="orgab309a0"></a>
 
 # Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
-    ```
-        ;; This exports with line number 20.
-        (message "This is line 21")
-    ```
+    ;; This exports with line number 20.
+    (message "This is line 21")
 
 
-<a id="org5875ff2"></a>
+<a id="orgcef24cc"></a>
 
 # And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
     Some example from a text file.
 
 
-<a id="org0706135"></a>
+<a id="org07d676e"></a>
 
 # Some verse
 
@@ -42,7 +40,7 @@ Snow covers Emacs<br />
 </p>
 
 
-<a id="orgdf9fe05"></a>
+<a id="org63fd4f7"></a>
 
 # Some quote
 
@@ -50,14 +48,14 @@ Snow covers Emacs<br />
 > but not any simpler &#x2014;Albert Einstein
 
 
-<a id="orgf585070"></a>
+<a id="org9fceb32"></a>
 
 # Style
 
 **bold**, *italic*, <span class="underline">underlined</span>, `verbatim` and `code`, and, if you must, <del>strike-through</del>
 
 
-<a id="org8ff973c"></a>
+<a id="org015c556"></a>
 
 # LaTeX
 
@@ -66,14 +64,14 @@ x=\sqrt{b}                              % even tables, figures
 \end{equation}                          % etc
 
 
-<a id="org0ca9904"></a>
+<a id="org4e5c622"></a>
 
 # Img
 
 ![img](./img/Untitled.png "This is the caption for the next figure link (or table)")
 
 
-<a id="orgcce5548"></a>
+<a id="orgde35816"></a>
 
 # Table
 
