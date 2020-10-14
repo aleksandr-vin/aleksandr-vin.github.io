@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgab309a0)
-2.  [And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgcef24cc)
-3.  [Some verse](#org07d676e)
-4.  [Some quote](#org63fd4f7)
-5.  [Style](#org9fceb32)
-6.  [LaTeX](#org015c556)
-7.  [Img](#org4e5c622)
-8.  [Table](#orgde35816)
+1.  [Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#org3def2cb)
+2.  [And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#org2d88e11)
+3.  [Some verse](#orgde7b7c2)
+4.  [Some quote](#orge8750cd)
+5.  [Style](#org83c03c6)
+6.  [LaTeX](#org3dff6e9)
+7.  [Img](#org06ff613)
+8.  [Table](#org5aa58ee)
 
 
 
-<a id="orgab309a0"></a>
+<a id="org3def2cb"></a>
 
 # Hello first code sampl <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
@@ -20,14 +20,14 @@
     (message "This is line 21")
 
 
-<a id="orgcef24cc"></a>
+<a id="org2d88e11"></a>
 
 # And an example <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
     Some example from a text file.
 
 
-<a id="org07d676e"></a>
+<a id="orgde7b7c2"></a>
 
 # Some verse
 
@@ -40,7 +40,7 @@ Snow covers Emacs<br />
 </p>
 
 
-<a id="org63fd4f7"></a>
+<a id="orge8750cd"></a>
 
 # Some quote
 
@@ -48,14 +48,14 @@ Snow covers Emacs<br />
 > but not any simpler &#x2014;Albert Einstein
 
 
-<a id="org9fceb32"></a>
+<a id="org83c03c6"></a>
 
 # Style
 
 **bold**, *italic*, <span class="underline">underlined</span>, `verbatim` and `code`, and, if you must, <del>strike-through</del>
 
 
-<a id="org015c556"></a>
+<a id="org3dff6e9"></a>
 
 # LaTeX
 
@@ -64,14 +64,14 @@ x=\sqrt{b}                              % even tables, figures
 \end{equation}                          % etc
 
 
-<a id="org4e5c622"></a>
+<a id="org06ff613"></a>
 
 # Img
 
-![img](./img/Untitled.png "This is the caption for the next figure link (or table)")
+![img](/img/Untitled.png "This is the caption for the next figure link (or table)")
 
 
-<a id="orgde35816"></a>
+<a id="org5aa58ee"></a>
 
 # Table
 
