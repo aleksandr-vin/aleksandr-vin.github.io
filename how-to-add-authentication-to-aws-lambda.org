@@ -1,0 +1,10 @@
+#+TITLE: aleksandr.vin
+#+AUTHOR: Aleksandr Vinokurov
+#+DATE: 2020-10-15
+
+
+* TODO How to add authentication to AWS Lambda
+  
+**** Links:
+
+  - [[https://aws.amazon.com/blogs/security/use-aws-lambda-authorizers-with-a-third-party-identity-provider-to-secure-amazon-api-gateway-rest-apis/][Use AWS Lambda authorizers with a third-party identity provider to secure Amazon API Gateway REST APIs]]
