@@ -2,18 +2,19 @@
 #+AUTHOR: Aleksandr Vinokurov
 #+DATE: 2020-10-15
 
-* Sometime you're forced to use old tools [2020-10-15]
+* Sometimes you're forced to use old tools [2020-10-15]
 
-  Somebody's playing in security. You need to use *docker-machine* because you
-  can't run native *docker* on localhost /(last [[https://github.com/docker/machine/commit/b170508bf44c3405e079e26d5fdffe35a64c6972][commit]] to docker-machine repo
-  on github was made more than a year ago)/. And it doesn't work from the box.
-  So you're tuning it up /(like almost everything on Linux)/.
+  Somebody's playing in security. You need to use *docker-machine*
+  because you can't run native *docker* on localhost /(last [[https://github.com/docker/machine/commit/b170508bf44c3405e079e26d5fdffe35a64c6972][commit]] to
+  docker-machine repo on github was made more than a year ago)/. And
+  it doesn't work from the box.  So you're tuning it up /(like almost
+  everything on Linux)/.
 
-  This time the problem was in the difference of names of the default shared
-  folder (host ~/home~ was mounted as ~/hosthome~ in guest vm, where actual
-  docker engine runs). And rather loosy behaviour of ~-v~, ~--volume~ option
-  of ~docker run~ in comparison to more explicit ~--mount~. See question answer
-  on [[https://superuser.com/a/1594651/1230369][superuser.com]].
+  This time the problem was in names' differences of default shared
+  folder (host ~/home~ was mounted as ~/hosthome~ in guest vm, where
+  actual docker engine runs), and rather loosy behaviour of ~-v~,
+  ~--volume~ option of ~docker run~ in comparison to more explicit
+  ~--mount~. See question answer on [[https://superuser.com/a/1594651/1230369][superuser.com]].
 
 * Something to start with [2020-10-15]
 
