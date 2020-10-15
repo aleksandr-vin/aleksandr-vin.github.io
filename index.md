@@ -1,14 +1,14 @@
 
 # Table of Contents
 
-1.  [Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgb3f2ed6)
-    1.  [I made it. Again. After, maybe, 10 years.](#org24b2e67)
-    2.  [Here is a link to a note I made last evening about](#org783b6b1)
-    3.  [Thoughts about VR (home) office](#org5a89895)
+1.  [Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>](#orgb0b681a)
+    1.  [I made it. Again. After, maybe, 10 years.](#org775050f)
+    2.  [Here is a link to a note I made last evening about](#orgb20914d)
+    3.  [Thoughts about VR (home) office](#org3d1a670)
 
 
 
-<a id="orgb3f2ed6"></a>
+<a id="orgb0b681a"></a>
 
 # Something to start with <span class="timestamp-wrapper"><span class="timestamp">[2020-10-15 Thu]</span></span>
 
@@ -16,14 +16,15 @@
 > but not any simpler &#x2014;Albert Einstein
 
 
-<a id="org24b2e67"></a>
+<a id="org775050f"></a>
 
 ## I made it. Again. After, maybe, 10 years.
 
-And again I have the same mood here, I think. I'm home alone, listening blues.
+And again I have the same mood here, I think. I'm home alone, listening to
+blues.
 
 
-<a id="org783b6b1"></a>
+<a id="orgb20914d"></a>
 
 ## Here is a link to a note I made last evening about
 
@@ -34,7 +35,7 @@ the steps to remember, and now I have mine **aleksandr.vin**
 domain name and a site running on github pages.
 
 
-<a id="org5a89895"></a>
+<a id="org3d1a670"></a>
 
 ## Thoughts about VR (home) office
 
