@@ -1,0 +1,13 @@
+#+TITLE: aleksandr.vin
+#+AUTHOR: Aleksandr Vinokurov
+#+DATE: 2020-10-16
+
+
+* TODO Convert gopro-videoparking pod to video streaming pod
+
+  ** Switch gopro to live streaming
+
+  ** Add Kurento container to collect stream and persist it
+
+  ** Add container to make periodic screenshots from the stream and upload it to s3 bucket
+  
