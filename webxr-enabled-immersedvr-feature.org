@@ -1,0 +1,19 @@
+#+TITLE: aleksandr.vin
+#+AUTHOR: Aleksandr Vinokurov
+#+DATE: 2021-04-09
+
+
+* Run into an idea of a killer-feature for ImmersedVR
+
+  This is how I proposed it on the Discord, https://discord.com/channels/428916969283125268/430876006216368139/830120758725705789:
+
+  #+BEGIN_QUOTE
+  Heh, who is aware of WebXR? It would be nice (and I can bet that eventually it will be done anyway) to have integrated support of it in immersedVR. In simple
+  words: You open a webxr-enabled site on a browser on your computer while working though immersedVR session, click Enter VR button on that page and Voila!: you
+  are in that 3D scene!!! You can choose to keep virtual screens visible as an overlay or not. When you're ready to leave that scene, simply click on the Leave
+  button that is added on your wrist band menu. That would be f***n killer experience.
+
+  Check the samples, if you hear WebXR for the very first time: https://immersive-web.github.io/webxr-samples/ – check them from the Oculus Quest 2 integrated
+  browser (for now :wink: )
+  #+END_QUOTE
+
