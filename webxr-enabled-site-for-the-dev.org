@@ -1,0 +1,11 @@
+#+TITLE: aleksandr.vin
+#+AUTHOR: Aleksandr Vinokurov
+#+DATE: 2021-04-09
+
+
+* IDEA of a WebXR-enabled site for a dev
+
+  Imagine: you put on your HMD (Oculus Quest 2 for ex.), open standard browser, goto a site, and click _Enter VR_ there, and you are in a 3D scene with all the
+  tools and windows you need for your dev process. Frontend/Backend coding, 3D design, analysis, working with data, graphs, devops, anything...
+  
+
