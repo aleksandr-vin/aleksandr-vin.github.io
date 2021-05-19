@@ -3,8 +3,6 @@ layout: post
 title:  "Something to start with"
 ---
 
-# Something to start with
-
 > Everything should be made as simple as possible,
 > but not any simpler &#x2014;Albert Einstein
 

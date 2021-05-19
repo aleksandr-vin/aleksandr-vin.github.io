@@ -3,8 +3,6 @@ layout: post
 title:  "Sometimes you're forced to use old tools"
 ---
 
-# Sometimes you're forced to use old tools
-
 Somebody's playing in security. You need to use **docker-machine**
 because you can't run native **docker** on localhost *(last [commit](https://github.com/docker/machine/commit/b170508bf44c3405e079e26d5fdffe35a64c6972) to
 docker-machine repo on github was made more than a year ago)*. And
