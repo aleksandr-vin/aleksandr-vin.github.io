@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "So many things to learn"
+tags:   videoparking, todo, sailing
 ---
 
 I was not making any records for almost 2 months. Will do that now.

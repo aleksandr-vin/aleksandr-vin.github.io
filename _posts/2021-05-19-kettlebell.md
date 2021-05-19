@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Kettlebell"
+tags:   sport
 ---
 
 Spring of 2021, you just can't find a 16 kilo kettlebell.

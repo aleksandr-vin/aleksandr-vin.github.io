@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Sometimes you're forced to use old tools"
+tags:   security, linux, exp
 ---
 
 Somebody's playing in security. You need to use **docker-machine**
