@@ -7,7 +7,7 @@ tags:   music
 Today was another awesome lesson with Delbert. Was playing chord progression of Everywhere Calypso by Sonny Rollins:
 
     D-G-A7-D
-    B7-Em7-A-D
+    B7-Em7-A7-D
 
 Love it. Started with chords, then made an etude, then added approach to 3rds and finished with broken chords and a bit more, this pattern, i.e.:
 
