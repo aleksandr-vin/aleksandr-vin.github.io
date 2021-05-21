@@ -34,7 +34,7 @@ So locally you can use these options to authenticate (ignoring obvious interacti
 
 Then you go to the pipeline and here is only one option, to use [*PipAuthenticate*](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/pip-authenticate?view=azure-devops) task.
 
-Note, that you need to provide project and scope (like *@Local* in my case) in the _artifacFeeds_ input, and use _onlyAddExtraIndex_ like this:
+Note, that you need to provide project and scope (like *@Local* in my case) in the _artifactFeeds_ input, and use _onlyAddExtraIndex_ like this:
 
      - task: PipAuthenticate@1
        inputs:
