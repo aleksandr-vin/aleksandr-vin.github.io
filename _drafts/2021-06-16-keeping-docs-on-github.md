@@ -38,4 +38,4 @@ when you're travelling can be handy. Sometimes it helps even when you're at home
 
 1. Key is compromised
 
-2. [TBD] see _forward security_
+2. [TBD] see _perfect forward secrecy_
