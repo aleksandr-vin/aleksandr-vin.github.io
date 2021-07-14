@@ -51,3 +51,20 @@ _Run > All Tests_ in project. Then, you iterate over failed test cases while fix
 _Rerun Failed Tests_ -- it is a good thing to have. If it is broken (aparently in current project _Run > All Tests_ is
 broken), then you run all tests with `mvn test -fn` which will not fail and run really *all* tests (later you'll need
 to fish for `*** FAILED ***` in the output).
+
+
+### Separate commits
+
+It's good to commit changes separately. You can work with git history later. Imagine, while you were doing all that
+refactoring, how many unrelated (to the story) fixes/ideas you've made. All such unrelated fixes and ideas are better
+to discuss and review in a separate PR.
+
+If each such change has its own commit, then:
+
+```
+git checkout -b introduce-new-feature origin/master
+git cherry-pick -x $COMMIT_WITH_NEW_FEATURE
+git push
+```
+
+Later, when that separate PR is merged to master, just rebase your big branch, and cherry-picked commits will dissapear.
