@@ -73,5 +73,5 @@ Later, when that separate PR is merged to master, just rebase your big branch, a
 ### Soft resets
 
 Sometimes you're in the middle of a change but the day is over. There is a thing you can do to still have a "backup":
-commit all, push it to *origin* and do a _soft reset_ with `git reset --soft head~`. Thta way your WIP changes are on
+commit all, push it to *origin* and do a _soft reset_ with `git reset --soft head~`. That way your WIP changes are on
 your branch on remote repo and you still see all the changes uncommitted locally.
