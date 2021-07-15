@@ -67,4 +67,4 @@ git cherry-pick -x $COMMIT_WITH_NEW_FEATURE
 git push
 ```
 
-Later, when that separate PR is merged to master, just rebase your big branch, and cherry-picked commits will dissapear.
+Later, when that separate PR is merged to master, just rebase your big branch, and cherry-picked commits will disappear.
