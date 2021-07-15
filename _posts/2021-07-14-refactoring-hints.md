@@ -6,8 +6,8 @@ tags:   refactoring, maven, tests, recompile, rebuild
 
 Random hints on refactoring.
 
-Refactorings differ, but some hints remain useful. Recently I was busy with a massive change of a common functionality, such
-as _logging_ interface across a multi-module project.
+Refactorings differ, but some findings remain useful. Recently I was busy with a massive change of a common functionality,
+such as _logging_ interface across a multi-module project.
 
 
 ## Some project stats:
@@ -33,7 +33,7 @@ Number of files read :  1238
 ----------------------------
 ```
 
-It take *10.5 min* to run `mvn test` on MacBook Pro (16-inch, 2019) with 2,3 GHz 8-Core i9 with 32 GB 2667 MHz DDR4.
+It takes *10.5 min* to run `mvn test` on MacBook Pro (16-inch, 2019) with 2,3 GHz 8-Core i9 and 32 GB 2667 MHz DDR4.
 
 
 ## Hints
@@ -68,3 +68,10 @@ git push
 ```
 
 Later, when that separate PR is merged to master, just rebase your big branch, and cherry-picked commits will disappear.
+
+
+### Soft resets
+
+Sometimes you're in the middle of a change but the day is over. There is a thing you can do to still have a "backup":
+commit all, push it to *origin* and do a _soft reset_ with `git reset --soft head~`. Thta way your WIP changes are on
+your branch on remote repo and you still see all the changes uncommitted locally.
