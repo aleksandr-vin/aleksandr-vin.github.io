@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Something to start with"
-tags:   vr, esx, blue
+tags:   vr esx blue
 ---
 
 > Everything should be made as simple as possible,

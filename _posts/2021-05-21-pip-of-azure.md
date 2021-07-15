@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PIP of Azure"
-tags:   azure, devops, pip
+tags:   azure devops pip
 ---
 
 Some notes on installation of a Python package from Azure feed.
