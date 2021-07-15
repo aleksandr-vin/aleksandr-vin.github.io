@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Refactoring hints"
-tags:   refactoring, maven, tests, recompile, rebuild
+tags:   refactoring maven tests recompile rebuild
 ---
 
 Random hints on refactoring.
