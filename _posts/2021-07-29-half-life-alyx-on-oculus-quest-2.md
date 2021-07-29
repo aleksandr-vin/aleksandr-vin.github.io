@@ -13,7 +13,7 @@ It is my gaming PC now.
 
 First I installed Chrome, Steam, Steam VR, Oculus App and tried playing Youtube videos and Portal 2: pretty good and graphics are very good.
 
-Then I followed these instructions https://arvrtips.com/setup-shadow-pc-with-oculus-quest/#download-steam-stream-vr-and-oculus-home-pc-apps
+Then I followed these [instructions](https://arvrtips.com/setup-shadow-pc-with-oculus-quest/#download-steam-stream-vr-and-oculus-home-pc-apps)
 and tried to go for Shadow App on Oculus, that way it was starting long, laggy and appeared to install some stuff on Shadow PC so
 next time you try to launch it from desktop app it first uninstall that "Shadow Alpha" stuff first. So that way Alyx was unplayable and
 Steam VR was also very laggy.
