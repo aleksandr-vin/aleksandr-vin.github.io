@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Everywhere calypso"
 tags:   music
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "So many things to learn"
 tags:   videoparking todo sailing
 ---

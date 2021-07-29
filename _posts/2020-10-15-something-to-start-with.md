@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Something to start with"
 tags:   vr esx blue
 ---

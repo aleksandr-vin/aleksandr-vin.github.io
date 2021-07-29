@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Sometimes you're forced to use old tools"
 tags:   security linux exp
 ---

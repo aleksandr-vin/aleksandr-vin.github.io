@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "PIP of Azure"
 tags:   azure devops pip
 ---

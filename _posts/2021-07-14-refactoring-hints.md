@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Refactoring hints"
 tags:   refactoring maven tests recompile rebuild
 ---
