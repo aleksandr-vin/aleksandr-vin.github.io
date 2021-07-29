@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Half-Life: Alyx on Oculus Quest 2"
 tags:   vr alyx half-life oculus quest-2 shadowpc vrdesktop
 ---
