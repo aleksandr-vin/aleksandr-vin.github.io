@@ -25,3 +25,5 @@ couple of things and voila: rather smooth gameplay in Alyx. It is not completely
 that is on the table with corporate MacBook and all in same wifi... but that I'll check next time. The game is playable, graphics are cool,
 pigeons and cats and grass... niiiice. Now I need time to play it.
 
+Small video:
+[![Small video](https://i.vimeocdn.com/video/1201693091_472x266)](https://vimeo.com/580739022/7e501ac263)
