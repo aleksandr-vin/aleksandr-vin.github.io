@@ -1,15 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      author: "aleksandrvin"
-plugins:
-  - jekyll-include-cache
-
 minimal_mistakes_skin: "plum"
-
 
 # Site Settings
 locale                   : "en-US"
