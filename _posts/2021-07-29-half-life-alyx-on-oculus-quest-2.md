@@ -26,3 +26,5 @@ pigeons and cats and grass... niiiice. Now I need time to play it.
 
 Small video:
 [![Small video](https://i.vimeocdn.com/video/1201693091_472x266)](https://vimeo.com/580739022/7e501ac263)
+
+{% include vimeoPlayer.html id="580739022/7e501ac263" %}
