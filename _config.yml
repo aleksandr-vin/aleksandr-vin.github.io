@@ -45,3 +45,6 @@ defaults:
       comments: true
       share: true
       related: true
+  - scope:
+      path: "scripts"
+      type: scripts
