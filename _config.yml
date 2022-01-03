@@ -2,7 +2,7 @@ title: Aleksandr Vinokurov
 email:
 description: Memos
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aleksandr.vin"
 twitter_username: aleksandrvin
 github_username: aleksandr-vin
 
