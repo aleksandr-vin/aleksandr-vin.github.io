@@ -35,6 +35,13 @@ plugins:
 
 search: true
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
 author:
   name     : "Aleksandr Vinokurov"
   # avatar   : "/assets/images/bio-photo.jpg"
