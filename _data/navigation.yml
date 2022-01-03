@@ -1,7 +1,0 @@
-main:
-  - title: "Posts"
-    url: /
-  - title: "Tags"
-    url: /tags/
-  - title: "External"
-    url: https://google.com
