@@ -40,16 +40,6 @@ author:
   # avatar   : "/assets/images/bio-photo.jpg"
   # bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Amsterdam, Netherlands"
-  
-main:
-  - title: "Posts"
-    url: /
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "External"
-    url: https://google.com
 
 defaults:
   # _posts
