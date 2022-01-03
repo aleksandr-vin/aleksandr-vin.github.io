@@ -35,6 +35,12 @@ plugins:
 
 search: true
 
+author:
+  name     : "Aleksandr Vinokurov"
+  # avatar   : "/assets/images/bio-photo.jpg"
+  # bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Amsterdam, Netherlands"
+
 defaults:
   # _posts
   - scope:
