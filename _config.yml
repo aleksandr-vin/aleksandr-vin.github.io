@@ -40,6 +40,16 @@ author:
   # avatar   : "/assets/images/bio-photo.jpg"
   # bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Amsterdam, Netherlands"
+  
+main:
+  - title: "Posts"
+    url: /
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "External"
+    url: https://google.com
 
 defaults:
   # _posts
@@ -54,7 +64,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      date_format: "%d-%m-%Y"
   - scope:
       path: "scripts"
       type: scripts
