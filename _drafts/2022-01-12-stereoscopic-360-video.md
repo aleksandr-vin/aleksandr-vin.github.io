@@ -30,3 +30,7 @@ placed in the vertices of [tetrahedron](https://en.m.wikipedia.org/wiki/Tetrahed
 And dynamically choose the two with vector between them being the closest in orientation
 to the vector between virtual eyes, so always changing video sources when rotating the
 head in VR in 3dof.
+
+Did quick searching for 360 stereoscopic cameras, and did find one interesting sample for
+around 5500€ – Insta 360 Pro 2. See specs and pictures. It has 6 lenses on one plane, so
+it should loose stereoscopic quality on 2 of 3 DoF.
