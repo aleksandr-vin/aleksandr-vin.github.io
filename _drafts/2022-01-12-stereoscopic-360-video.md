@@ -37,3 +37,6 @@ it should loose stereoscopic quality on 2 of 3 DoF.
 
 Somethong to read: https://books.google.com/books/about/Multiple_View_Geometry_in_Computer_Visio.html?id=e30hAwAAQBAJ
 
+And https://www.amazon.com/Cinematic-VR-Formula-Beginners-Creating-ebook/dp/B076HZLK55/ref=mp_s_a_1_1?keywords=9783944218113&linkCode=qs&qid=1642028147&s=books&sr=1-1
+
+And look here: https://blenderartists.org/t/flexible-virtual-reality-parallax-with-blender-tetrahedron-multi-camera-vr-view-hack/682634
