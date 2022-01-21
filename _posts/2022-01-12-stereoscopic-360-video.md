@@ -35,8 +35,15 @@ Did quick searching for 360 stereoscopic cameras, and did find one interesting s
 around 5500€ – Insta 360 Pro 2. See specs and pictures. It has 6 lenses on one plane, so
 it should loose stereoscopic quality on 2 of 3 DoF.
 
-Somethong to read: https://books.google.com/books/about/Multiple_View_Geometry_in_Computer_Visio.html?id=e30hAwAAQBAJ
+![Insta360 Pro2 specs](/img/Insta360-Pro2-detailed-specs.jpeg)
 
-And https://www.amazon.com/Cinematic-VR-Formula-Beginners-Creating-ebook/dp/B076HZLK55/ref=mp_s_a_1_1?keywords=9783944218113&linkCode=qs&qid=1642028147&s=books&sr=1-1
+![Insta360 Pro2](/img/Insta360-Pro2.jpeg)
 
-And look here: https://blenderartists.org/t/flexible-virtual-reality-parallax-with-blender-tetrahedron-multi-camera-vr-view-hack/682634
+
+## Somethong to read
+
+1. [Multiple View Geometry in Computer Vision](https://books.google.com/books/about/Multiple_View_Geometry_in_Computer_Visio.html?id=e30hAwAAQBAJ)
+
+1. [The Cinematic VR Formula: A Beginner's Guide to Creating Virtual Reality Movies](https://read.amazon.com/kp/embed?asin=B076HZLK55&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_GQ62N25WTWQNKXJFVQ2M)
+
+1. [Flexible Virtual Reality parallax with Blender Tetrahedron Multi Camera VR View Hack](https://blenderartists.org/t/flexible-virtual-reality-parallax-with-blender-tetrahedron-multi-camera-vr-view-hack/682634)
