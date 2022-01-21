@@ -54,6 +54,3 @@ defaults:
       share: true
       related: true
       show_date: true
-  - scope:
-      path: "scripts"
-      type: scripts
