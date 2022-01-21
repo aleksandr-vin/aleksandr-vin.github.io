@@ -34,9 +34,9 @@ Did quick searching for 360 stereoscopic cameras, and did find one interesting s
 around 5500€ – Insta 360 Pro 2. See specs and pictures. It has 6 lenses on one plane, so
 it should loose stereoscopic quality on 2 of 3 DoF.
 
-![Insta360 Pro2 specs](/img/Insta360-Pro2-detailed-specs.jpeg){: width="250" }
+![Insta360 Pro2 specs](/img/Insta360-Pro2-detailed-specs.jpeg){: width="100%" }
 
-![Insta360 Pro2](/img/Insta360-Pro2.jpeg){: width="250" }
+![Insta360 Pro2](/img/Insta360-Pro2.jpeg){: width="100%" }
 
 
 ## Somethong to read
