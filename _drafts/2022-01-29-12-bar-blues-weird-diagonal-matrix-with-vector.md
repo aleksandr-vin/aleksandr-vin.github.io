@@ -8,16 +8,15 @@ then while practicing it and watching on 3 lines by four measures I started seei
 matrix that is "horizontally mirrored". And the last measure of each line is a vector. Is it a hidden MxA math?
 
 ```
-\begin{document}
-$\begin{pmatrix}
-  a & b\\ 
-  c & d
-\end{pmatrix}$,  
-but it looks too big, so let's try 
-$\big(\begin{smallmatrix}
-  a & b\\
-  c & d
-\end{smallmatrix}\big)$ 
-instead.
-\end{document}
+\begin{pmatrix}
+  G7 & G7 & G7\\
+  C7 & C7 & G7\\
+  D7 & C7 & G7
+\end{pmatrix}
+\times
+\begin{pmatrix}
+  G7\\ 
+  G7\\
+  G7
+\end{pmatrix}
 ```
