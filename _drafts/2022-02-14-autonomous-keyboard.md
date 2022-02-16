@@ -19,7 +19,7 @@ looks like a good place to hide the battery pack.
 
 After thinking about where to hide the chip, I stepped back and decided to do less damage to UHK for now and soldered a short tail of USB mini-b to the BT-500, plugging it into the keyboard the designed way and duck-taped it to the case.
 
-![autonomous-keyboard-1](/img/autonomous-keyboard-1.jpeg)
+![autonomous-keyboard-1](/img/autonomous-keyboard-1.jpeg){: width="50%" }
 
 The keyboard now is BT-enabled but plugged into socket for elecricity.
 
