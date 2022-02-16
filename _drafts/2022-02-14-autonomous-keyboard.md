@@ -17,4 +17,13 @@ Now, after almost a year I've checked the internals of the UHK to see that there
 case. The UHK guys doesn't share the CAD files for the case – that could help 3D printing the modded case with a place to hold the chip. And also, the palm rests
 looks like a good place to hide the battery pack.
 
+After thinking about where to hide the chip, I stepped back and decided to do less damage to UHK for now and soldered a short tail of USB mini-b to the BT-500, plugging it into the keyboard the designed way and duck-taped it to the case.
+
+![autonomous-keyboard-1](/img/autonomous-keyboard-1.jpeg)
+
+The keyboard now is BT-enabled but plugged into socket for elecricity.
+
 TBC
+
+Refs:
+1. http://handheldsci.com/wp/wp-content/uploads/Manual_Full_v5.2.10.pdf
