@@ -23,6 +23,12 @@ After thinking about where to hide the chip, I stepped back and decided to do le
 
 The keyboard now is BT-enabled but plugged into socket for elecricity.
 
+Next steps would be:
+
+1. Hide the dongle inside
+2. Put battery pack into the palm rests (see [model 1](https://www.prusaprinters.org/prints/29287-palm-rest-for-ultimate-hacking-keyboard) and [model 2](https://www.prusaprinters.org/prints/32425-ultimate-hacking-keyboard-wrist-rests))
+3. Potentially making a case, see [DIY cases](https://ultimatehackingkeyboard.com/blog/2019/05/01/diy-uhk-carrying-cases)
+
 TBC
 
 Refs:
