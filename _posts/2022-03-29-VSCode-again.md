@@ -1,6 +1,6 @@
 ---
 title:  "VSCode Again"
-tags:   vscode dev bloop metals java hints
+tags:   vscode dev bloop metals java hints vr oculus
 ---
 
 It's funny but I did try swapping IDEA with VSCode two or three times already. For Scala projects. And everytime something was not compiling
@@ -23,3 +23,12 @@ It appeared that change of `"metals.javaHome"` in `settings.json` does not resta
 Kill it and start VSCode again (with proper `"metals.javaHome"`) and errors are gone.
 
 Phew!
+
+
+### Some notes
+
+1. [Gitpod](https://www.gitpod.io/) looks like a nice idea to try in Oculus Browser
+
+2. [Code server](https://github.com/coder/code-server) and [deploys](https://github.com/coder/deploy-code-server#deploy-code-server-)
+
+3. [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync)
