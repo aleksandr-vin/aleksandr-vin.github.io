@@ -15,7 +15,7 @@ That appeared to be a nice small one tutor, where you pause it many times and op
 Here is a first result with LERP move: [script](https://gist.github.com/aleksandr-vin/67fc4dfd4263f90e11d336c7814db025)
 control LERP move of a GameObject through checkpoints.
 
-{% include vimeoPlayer.html id="694457630/ec5d698c63" %}
+{% include vimeoPlayer.html id="694457630" %}
 
 ## Side steps
 
