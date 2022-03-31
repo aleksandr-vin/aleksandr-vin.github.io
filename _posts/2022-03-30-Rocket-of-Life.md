@@ -1,5 +1,5 @@
 ---
-title: "Rocket of Lige"
+title: "Rocket of Life"
 tags: unity particle-system effects graphics video
 ---
 
