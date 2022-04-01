@@ -6,7 +6,7 @@ tags: dev oculus browser workstation
 So couple of days ago I've stepped into the [gitpod.io](https://gitpod.io/) -- a service that runs VSCode in your browser window and
 loads folder from a link.
 
-You put together `gitpo.io/#` and `https://github.com/foo/bar` and the magic happens.
+You put together `gitpod.io/#` and `https://github.com/foo/bar` and the magic happens.
 
 I've got the idea of doing that in Oculus. In browser. Having only the headset, bluetooth keyboard and a mouse tracking device (Apple trackpad).
 
