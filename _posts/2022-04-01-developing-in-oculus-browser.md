@@ -29,3 +29,7 @@ But even though, this is already a freaking big step towards the computer-less w
 PS. will commit it like this and add video after.
 
 PPS. You can compile/test/debug and even share running services in gitpod.io, I forgot to mention. YOU NEED TO TRY IT!!!
+
+PPPS. Here is the video (captured on Oculus, uploaded to Vimeo from oculus via browser):
+
+{% include vimeoPlayer.html id="694840441" %}
