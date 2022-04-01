@@ -24,7 +24,7 @@ Oculus controller, which does not know double tap or triple tap and no point-cli
 
 Also there are no settings for the keyboard so far: repeat rate is out of setting in Oculus (at least for now).
 
-But even though, this is already a freaking big step towards the computer-less work life. Or step back to terminal clients for mainframes :)
+But even though, this is already a freaking big step towards the computerless work life. Or step back to terminal clients for mainframes :)
 
 PS. will commit it like this and add video after.
 
