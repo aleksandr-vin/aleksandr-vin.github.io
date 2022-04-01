@@ -1,6 +1,6 @@
 ---
 title:  "Acronym of the day"
-tags:   project, klm, tool, idea, developing, service
+tags:   project klm tool idea developing service
 ---
 
 During a call with a new colleague, while discussing thoughts on a tool that can be a dictionary of acronyms, I've got an idea of
