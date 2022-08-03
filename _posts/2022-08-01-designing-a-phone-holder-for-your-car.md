@@ -14,6 +14,8 @@ put on and off.
 So it took 5 versions of printing and breaking/adjusting it. Current version sits well,
 but already need an improvement, the one I can workaround for now :)
 
+Here is the [repo](https://github.com/aleksandr-vin/Screen-clamp-for-Mercedes-Benz-A-class-2012).
+
 ![car_screen_clamp_1](/img/car_screen_clamp_1.jpeg){: width="50%" }
 
 ![car_screen_clamp_2](/img/car_screen_clamp_2.jpeg){: width="50%" }
