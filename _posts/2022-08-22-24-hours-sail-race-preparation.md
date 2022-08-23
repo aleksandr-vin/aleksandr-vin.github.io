@@ -52,8 +52,8 @@ At sea we hoisted spinnaker right after hoisting the mainsail, but we put tack c
 right into the spinnaker pole fitting and didn't have a down-haul. That appeared to be
 a mistake which let us broke a spinnaker pole's fitting as a result.
 
-![wrong_rigging_spinnakker_pole](/img/2022-08-20-spinnaker-2.jpg){: width="50%" }
-![broken_spinnakker_pole](/img/2022-08-20-broken-spinnaker-pole.jpg){: width="50%" }
+![wrong_rigging_spinnakker_pole](/img/2022-08-20-spinnaker-2.jpg){: width="49%" }
+![broken_spinnakker_pole](/img/2022-08-20-broken-spinnaker-pole.jpg){: width="49%" }
 
 ![spinnaker](/img/2022-08-20-spinnaker.jpg){: width="100%" }
 
