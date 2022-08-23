@@ -15,7 +15,7 @@ After registration we decided to have at least 2 trainings with night sailing, a
 
 Last Friday we've got a package with vimpels and numbers:
 
-![vimpels_and_numbers](/img/2022-08-18-24uurszeilrace-pack.jpg){: width="50%" }
+![vimpels_and_numbers](/img/2022-08-18-24uurszeilrace-pack.jpg){: width="100%" }
 
 ## First training
 
@@ -27,7 +27,7 @@ families.
 It was last weekend, 19-20 August. I took Olka, with me, as she were thinking about joining
 the race after summer camp on Shtandard.
 
-![spinnaker](/img/2022-08-20-training-2.jpg){: width="30%" }
+![trainees](/img/2022-08-20-training-2.jpg){: width="100%" }
 
 We had a long discussion ashore about the plan of that training.
 As we lack briefing it during the workdays before, everybody had different ideas.
@@ -38,7 +38,7 @@ specific line). But the guys voted for going to sleep around 0100 or 0200.
 We also raised concerns about starting from Hoorn: dry weeks and growth of water plants
 plus moving the boat to Hoorn before Friday could be tricky.
 
-![waterplanten](/img/2022-08-20-waterplanten.jpg){: width="50%" }
+![waterplanten](/img/2022-08-20-waterplanten.jpg){: width="100%" }
 
 Discussions were transferred to the sea and we ended up training some start simulations
 at SPORT-C yellow bouy.
@@ -52,9 +52,10 @@ At sea we hoisted spinnaker right after hoisting the mainsail, but we put tack c
 right into the spinnaker pole fitting and didn't have a down-haul. That appeared to be
 a mistake which let us broke a spinnaker pole's fitting as a result.
 
-![wrong_rigging_spinnakker_pole](/img/2022-08-20-spinnaker-2.jpg){: width="30%" }
-![broken_spinnakker_pole](/img/2022-08-20-broken-spinnaker-pole.jpg){: width="30%" }
-![spinnaker](/img/2022-08-20-spinnaker.jpg){: width="30%" }
+![wrong_rigging_spinnakker_pole](/img/2022-08-20-spinnaker-2.jpg){: width="50%" }
+![broken_spinnakker_pole](/img/2022-08-20-broken-spinnaker-pole.jpg){: width="50%" }
+
+![spinnaker](/img/2022-08-20-spinnaker.jpg){: width="100%" }
 
 But we still had some fun running under the colors!
 
@@ -65,15 +66,16 @@ Also did practice _braking_: by giving slack to boom-sheet while luffing up to l
 
 Here is a <a href="https://boating.page.link/PFGYSuHteUce1fC39" target="_blank">track</a> after unhoisting spinnaker:
 
-<a href="https://boating.page.link/PFGYSuHteUce1fC39" target="_blank">![track](/img/2022-08-20-track.jpg){: width="50%" }</a>
-![Olka](/img/2022-08-20-Olka.jpg){: width="20%" }
+<a href="https://boating.page.link/PFGYSuHteUce1fC39" target="_blank">![track](/img/2022-08-20-track.jpg){: width="100%" }</a>
+
+![Olka](/img/2022-08-20-Olka.jpg){: width="100%" }
 
 The type of spinnaker pole that Berta had appeared to be old and uncommon nowdays,
 so spare parts were impossible to find. But Luba used the magic word _race_ and a
 new old pole 4.2m long (slightly longer than damaged one but a proper size for Berta)
 appeared, raising race budget with 300EUR more.
 
-![new old spinnaker pole](/img/2022-08-20-new-old-spinnaker-pole.jpg){: width="30%" }
+![new old spinnaker pole](/img/2022-08-20-new-old-spinnaker-pole.jpg){: width="100%" }
 
 Now we have last working week before the race. We plan to have 3 video-calls to discuss
 our propoer course, racing rules and final points.
@@ -82,7 +84,7 @@ Lazily we look into proper spinnaker rigging, like [https://waypointamsterdam.nl
 
 And I'm studying _Racing Rules of Sailing_:
 
-![rules](/img/2022-08-20-rules.jpg){: width="30%" }
+![rules](/img/2022-08-20-rules.jpg){: width="100%" }
 
 ## Links
 
