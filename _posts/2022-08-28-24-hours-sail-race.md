@@ -36,5 +36,5 @@ mainsheet didn't help.
 We were amazed of warmness and careness at Medemblik, plus that was a first time we saw 7 boats tied up side-to-side so it was possible to
 walk through them from the harbor master house to the meldstijger!
 
-Our track: https://boating.page.link/LLGswqZ759ocLKkL6
-And link to the photo: https://www.facebook.com/photo/?fbid=493022839493010&set=a.456893476439280
+Our track: [https://boating.page.link/LLGswqZ759ocLKkL6](https://boating.page.link/LLGswqZ759ocLKkL6)
+And link to the photo: [https://www.facebook.com/photo/?fbid=493022839493010&set=a.456893476439280](https://www.facebook.com/photo/?fbid=493022839493010&set=a.456893476439280)
