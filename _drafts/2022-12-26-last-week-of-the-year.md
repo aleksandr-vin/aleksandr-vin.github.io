@@ -49,3 +49,13 @@ Some things still not working:
 - [ ] And mouse over bluetooth is lagging a bit. That *Delux m618 mini* mouse has a radio USB dongle, but looks like
   [drivers](https://www.deluxworld.com/en-service.html?stoken=4e642cda56a52c5f42a222bac9db468e&title=618) are only for Windows.
 
+## Steam Remote Play and Family Sharing
+
+Late night, I'm sitting at the table with my daughter, both at macbooks, both running Steam. She's through Shadow
+client and she's in her personal Steam account. I'm sharing my games lib with her and she's starting Untitled
+Goose Game and inviting me for remote play. It took us something around 30 min to figure out how to start it
+and that we need at least one game controller! And Steam's chat system really sucks!
+
+We need to find out how to connect Switch Joy controllers to macbook tomorrow...
+
+And we gonna stream games via Discord to our family.
