@@ -42,5 +42,10 @@ into HDR resolution and *Match frame rate* + *Match color range* settings there,
 ## Back to Shadow on Raspberry Pi
 
 Okay, Shadow client installed following [this blog post](https://shadow.tech/blog/teamshadow/shadow-raspberry-pi).
-Nimbus+ game pad connected by bluetooth, but on shadow Windows it's vertical axis is reversed. And mouse over
-bluetooth is lagging a bit. That *Delux m618 mini* mouse has a radio USB dongle, but looks like [drivers](https://www.deluxworld.com/en-service.html?stoken=4e642cda56a52c5f42a222bac9db468e&title=618) are only for Windows.
+Some things still not working:
+
+- [ ] Audio is not working on Raspberry Pi
+- [ ] Nimbus+ game pad connected by bluetooth, but on shadow Windows it's vertical axis is reversed
+- [ ] And mouse over bluetooth is lagging a bit. That *Delux m618 mini* mouse has a radio USB dongle, but looks like
+  [drivers](https://www.deluxworld.com/en-service.html?stoken=4e642cda56a52c5f42a222bac9db468e&title=618) are only for Windows.
+
