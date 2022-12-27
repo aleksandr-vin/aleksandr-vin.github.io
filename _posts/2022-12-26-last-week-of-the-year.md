@@ -11,10 +11,10 @@ Yep, somehow my pi was running a 32 bit OS. Attempt to install Shadow uncovered
 that problem. And now it sounds like a good moment to refresh what I'm running
 there:
 
-- [ ] avahi — mDNS for service discovery
-- [ ] netatalk — an AFP fileserver
-- [ ] minidlna — to stream videos in LAN
-- [ ] transmission — a daemon with web UI
+- [x] avahi — mDNS for service discovery
+- [x] netatalk — an AFP fileserver
+- [x] minidlna — to stream videos gin LAN
+- [x] transmission — a daemon with web UI
 - [ ] prometheus
 - [ ] node_exporter
 - [ ] [mijn-simpel-exporter](https://github.com/aleksandr-vin/mijn-simpel-exporter)
@@ -22,6 +22,8 @@ there:
 - [ ] homebridge
 
 And actually install Shadow client there at the end.
+
+Put configs to a [repo](https://github.com/xvygyjau/capibara).
 
 ## Apple TV
 
