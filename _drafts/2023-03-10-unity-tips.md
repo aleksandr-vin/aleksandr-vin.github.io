@@ -49,3 +49,7 @@ tags: unity, tips
 
    See [lesson](https://learn.unity.com/tutorial/lesson-5-4-what-s-the-difficulty?uv=2021.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f7648a4edbc2a5578eb67df&projectId=5cf96bdeedbc2a2b475972b3#).
    
+10. Nested Prefabs
+
+   See [lesson](https://learn.unity.com/tutorial/lab-5-swap-out-your-assets-1?uv=2021.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f7648a4edbc2a5578eb67df&projectId=5cf96bdeedbc2a2b475972b3#).
+   
