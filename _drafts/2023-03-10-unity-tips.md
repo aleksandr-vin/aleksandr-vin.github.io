@@ -56,3 +56,7 @@ tags: unity, tips
 11. Persist volume level between restarts (scene reloads)
 
     Use static variable to store the value.
+
+12. Pausing the game
+
+   See [that article](https://gamedevbeginner.com/the-right-way-to-pause-the-game-in-unity).
