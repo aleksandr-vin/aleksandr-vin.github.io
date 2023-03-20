@@ -60,3 +60,8 @@ tags: unity, tips
 12. Pausing the game
 
    See [that article](https://gamedevbeginner.com/the-right-way-to-pause-the-game-in-unity).
+
+13. Cick-and-Swipe
+
+   See [guide](https://connect-prd-cdn.unity.com/20210505/3181b77f-2009-4506-ae6b-10beabc23d3c/Unit%205%20-%20Bonus%20Features%20and%20Solution.pdf?_ga=2.259926218.1186801097.1620052249-59568313.1601905412).
+   
