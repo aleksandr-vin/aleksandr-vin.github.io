@@ -64,4 +64,17 @@ tags: unity, tips
 13. Cick-and-Swipe
 
    See [guide](https://connect-prd-cdn.unity.com/20210505/3181b77f-2009-4506-ae6b-10beabc23d3c/Unit%205%20-%20Bonus%20Features%20and%20Solution.pdf?_ga=2.259926218.1186801097.1620052249-59568313.1601905412).
-   
+
+14. SerializeField
+
+   Makes (private) variable visible in Editor.
+   See [lesson](https://learn.unity.com/tutorial/lesson-6-1-project-optimization?uv=2021.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f7648a4edbc2a5578eb67df&projectId=5d092adcedbc2a0e5c02d26f#5d1bba43edbc2a001f8c0131).
+
+15. `FixedUpdate` and `LateUpdate`
+
+   `FixedUpdate` -- to calculate physics and movement, `LateUpdate` -- to calc camera movement.
+   From [lesson](https://learn.unity.com/tutorial/lesson-6-1-project-optimization?uv=2021.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f7648a4edbc2a5578eb67df&projectId=5d092adcedbc2a0e5c02d26f#5d1bba43edbc2a001f8c0131).
+
+16. `Awake` and `Start`
+
+   See [lesson](https://learn.unity.com/tutorial/lesson-6-1-project-optimization?uv=2021.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f7648a4edbc2a5578eb67df&projectId=5d092adcedbc2a0e5c02d26f#5d1bba43edbc2a001f8c0131).
