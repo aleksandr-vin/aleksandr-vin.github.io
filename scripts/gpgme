@@ -1,0 +1,7 @@
+# Pipe a text through that command
+#
+# Example:
+#   date | (gpg ...)
+#
+
+(gpg --keyserver pgp.mit.edu --recv-keys 4AD7C185 && gpg --batch --trust-model always --faked-system-time 20210101T000000 --armor --encrypt --recipient 4AD7C185)
