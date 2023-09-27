@@ -26,6 +26,11 @@ brew upgrade & remind-job-done
 
 Then `brew upgrade` is made a background job which is immediately put into foreground and waited for completion.
 
-This is how you see notification on iPhone: ![Notification on iPhone](/img/iphone-notification.jpg){: width="50%" }
+This is how you see notification on iPhone:
+![Notification on iPhone](/img/iphone-notification.jpg){: width="50%" }
 
-And on Apple Watch: ![Notification on Apple Watch](/img/apple-watch-notification.png){: width="50%" }
+And on Apple Watch:
+![Notification on Apple Watch](/img/apple-watch-notification.png){: width="50%" }
+
+And in Reminders.app:
+![List of notifications in Reminders.app](/img/reports-reminders.png){: width="50%" }
