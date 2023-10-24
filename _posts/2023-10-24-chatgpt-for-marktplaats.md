@@ -3,9 +3,9 @@ title: "ChatGPT companion for Marktplaats conversations"
 tags: chatgpt marktplaats bot telegram conversations service idea
 ---
 
-Did you ever sell something on [marktplaats.nl](marktplaats.nl)? So many people ask for 50% discount from first message!
+Did you ever sell something on [marktplaats.nl](https://marktplaats.nl)? So many people ask for 50% discount from first message!
 
-So one Friday morning I mentioned: what if I make ChatGPT keep such conversations, convincing these people to buy at the listed
+So one Friday morning I thought: what if I make ChatGPT keep such conversations, convincing these people to buy at the listed
 price. And by the end of that day I had a command-line tool that was listing my marktplaats' conversations and was able
 to answer to potential buyers with a ChatGPT-suggested answer.
 
