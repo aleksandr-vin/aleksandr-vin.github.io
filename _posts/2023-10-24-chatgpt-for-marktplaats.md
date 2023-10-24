@@ -14,11 +14,11 @@ become a selling representative, who can list user's conversations, fetch messag
 description from marktplaats.nl, and ask ChatGPT (`gpt-4` model worked better than `gpt-3.5-turbo`) for a suggested answer.
 You can regenerate the suggestion if you don't like it.
 
-Even in this inital version it helped me to make a deal with one guy. ChatGPT made eaborative answers pointing out why
-the iteam worth the price that I've set. It described good sides of the deal and made it way better than I would have done it
+Even in this inital version it helped me to make a deal with one guy. ChatGPT made elaborative answers pointing out why
+the item worth the price that I've set. It described good sides of the deal and made it way better than I would have done it
 myself.
 
-Since than I've added some features to that bot, mostly because I wanted to make it as a paid service eventually, and needed
+Since than I've added some features to that bot, mostly because I wanted to make it a paid service eventually, and needed
 to bring friends to test it. Making the list of features as this:
 
 1. Change of context, which is used to configure ChatGPT
