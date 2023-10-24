@@ -1,6 +1,6 @@
 ---
 title: "Users feedback notes"
-tags: testing, users, feedback, notes
+tags: testing, users, feedback, notes, unity
 ---
 
 # Users feedback
@@ -12,7 +12,7 @@ Notes on [Unity lesson](https://learn.unity.com/tutorial/introduction-to-user-fe
 > ... test early and often! The more you test and refine along the way, the better your end product will be.
 
 UX links:
--[The Complete Guide to UX Research Methods](https://www.toptal.com/designers/user-research/guide-to-ux-research-methods#:~:text=What%20are%20UX%20methods%3F,analysis%2C%20and%20other%20feedback%20methodologies)
+- [The Complete Guide to UX Research Methods](https://www.toptal.com/designers/user-research/guide-to-ux-research-methods#:~:text=What%20are%20UX%20methods%3F,analysis%2C%20and%20other%20feedback%20methodologies)
 - [A comprehensive list of UX design methods & deliverables](https://uxdesign.cc/a-comprehensive-list-of-ux-design-methods-deliverables-2021-2feb3e70e168)
 
 > Observe rather than guide
