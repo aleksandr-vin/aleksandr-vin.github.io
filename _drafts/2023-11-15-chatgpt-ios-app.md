@@ -90,7 +90,8 @@ Where:
 }
 ```
 
-3. context in reply looks like something encrypted (ChatGPT system context for their completion api?)
+3. context in reply looks like something encrypted (ChatGPT system context for their completion api?), ChatGPT suggests that it is 
+   JSON Web Encryption (JWE) token
 
 4. e2ee_key can be an end-to-end encryption key
 
@@ -137,4 +138,9 @@ const roomName = 'name-of-room';
 ```
 
 Then joining the room as ChatGPT from web app and as User with `url` and `token` rewritten by Charles.
+
+Searching further for e2ee_key brings the end-to-end encryption functionality in LiveKit, which appeared to be
+not very supported in their React client and eventually the pure js sample https://github.com/livekit/client-sdk-js/tree/main#sdk-sample
+was able to perform full room connections with decrypted audio. Thus ChatGPT iOS app is waiting for something else, as it shows
+"Connecting..." while already joined the room and audio is working and after some seconds it disconnects.
 
