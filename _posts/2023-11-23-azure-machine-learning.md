@@ -22,6 +22,7 @@ Playing with Azure Machine Learning (AML) and it is really annoying:
    b. You just worship the cult of _Refresh button_ --- be my guest, hit it everywhere you see it, if you're waiting for something from MSFT.
       (There should be a browser plugin with customizable intervals per every _refresh_ button to be pressed on that portal --- just kidding,
       there should be no custom intervals, that extension should just hit-that-button automatically or it would be from MSFT too).
+      **UPDATE:** I've made it myself --- check [Azure Refresh Button Worshiper, Browser Extension](https://aleksandr.vin/2023/11/26/azure-refresh-button-worshiper.html).
 
    c. List of notifications is evolving the way they want: one time you see A, B and C messages, then in 3 min event D appears and message C
       is gone, who cares!
