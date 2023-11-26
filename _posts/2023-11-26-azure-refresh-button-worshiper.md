@@ -20,7 +20,7 @@ It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Re
 
 [Install extension from App Store (TBD)](https://aleksandr.vin/a-link-to-app-store)
 
-{% include vimeoPlayer.html id="888433348/f74eb27541" %}
+{% include vimeoPlayer.html id="888433348" %}
 
 <hr>
 
