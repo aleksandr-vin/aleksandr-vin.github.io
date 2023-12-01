@@ -25,3 +25,17 @@ It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Re
 <hr>
 
 It is fun project and was a *learning-while-doing*.
+
+## Pricing
+
+Azure Refresh Button Worshiper is available for $0.00 on the App Store, with no
+in-app purchases, no ads, and no tracking. It’s universal so you can use it on
+iPhone, iPad, and Mac. I hope you find it useful.
+
+## Azure Refresh Button Worshiper Privacy Policy
+
+Azure Refresh Button Worshiper does not collect, store, or transmit any personal information.
+
+## Azure Refresh Button Worshiper Support
+
+If you have any questions, check [discussions](https://github.com/aleksandr-vin/azure-refresh-button-worshiper/discussions), [email me](mailto:zulu@aleksandr.vin?subject=Azure%20Refresh%20Button%20Worshiper%20Support) or contact me on [Twitter](http://twitter.com/aleksandrvin).
