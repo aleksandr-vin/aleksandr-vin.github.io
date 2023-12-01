@@ -9,7 +9,7 @@ Last time, while making notes about Azure Portal, I've made a joke:
 > (There should be a browser plugin with customizable intervals per every _refresh_ button to be pressed on that portal --- just kidding,
 > there should be no custom intervals, that extension should just hit-that-button automatically or it would be from MSFT too).
 
-Then I've checked and there was no such browser extension. And literally, while I was waiting for the experiments' runs and endpoints'
+Then I've checked and there was no such browser extension. And literally, while I was waiting for the experiments runs and endpoints
 deployments on Azure, I've made an MVP of such Safari Extension myself:
 
 <hr>
@@ -24,4 +24,4 @@ It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Re
 
 <hr>
 
-It is fun project and a *learning while doing*.
+It is fun project and was a *learning-while-doing*.
