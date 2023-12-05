@@ -1,5 +1,5 @@
 ---
-title: "Azure Refresh Button Worshiper, Browser Extension"
+title: "Cerulean (Azure) Refresh Button Worshiper, Browser Extension"
 tags: azure msft AML DX UX browser-extension safari productivity fun
 ---
 
@@ -26,16 +26,21 @@ It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Re
 
 It is fun project and was a *learning-while-doing*.
 
+## Name
+
+Originally I called it **Azure Refresh Button Worshiper** but Apple found it a copycat and rejected the name. So it is renamed to
+**Cerulean Refresh Button Worshiper** --- "love" it!
+
 ## Pricing
 
-Azure Refresh Button Worshiper is available for $0.00 on the App Store, with no
+Cerulean Refresh Button Worshiper is available for $0.99 on the App Store, with no
 in-app purchases, no ads, and no tracking. It’s universal so you can use it on
 iPhone, iPad, and Mac. I hope you find it useful.
 
-## Azure Refresh Button Worshiper Privacy Policy
+## Cerulean Refresh Button Worshiper Privacy Policy
 
-Azure Refresh Button Worshiper does not collect, store, or transmit any personal information.
+Cerulean Refresh Button Worshiper does not collect, store, or transmit any personal information.
 
-## Azure Refresh Button Worshiper Support
+## Cerulean Refresh Button Worshiper Support
 
 If you have any questions, check [discussions](https://github.com/aleksandr-vin/azure-refresh-button-worshiper/discussions), [email me](mailto:zulu@aleksandr.vin?subject=Azure%20Refresh%20Button%20Worshiper%20Support) or contact me on [Twitter](http://twitter.com/aleksandrvin).
