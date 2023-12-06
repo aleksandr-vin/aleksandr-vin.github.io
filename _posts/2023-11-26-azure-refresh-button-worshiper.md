@@ -18,9 +18,9 @@ deployments on Azure, I've made an MVP of such Safari Extension myself:
 
 It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Refresh** button on the page. Only on `https://*.azure.com/*`.
 
-[Install extension from App Store (TBD)](https://aleksandr.vin/a-link-to-app-store)
-
-[Install extension from Chrome Web Store](https://chromewebstore.google.com/detail/refresh-button-worshiper/ffifkamlageigkonfgjdildmdkpmjhde)
+You can install extension from:
+- [App Store (TBD)](https://aleksandr.vin/a-link-to-app-store)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/refresh-button-worshiper/ffifkamlageigkonfgjdildmdkpmjhde)
 
 {% include youtubePlayer.html id="fmiJrmIn7ys" %}
 
