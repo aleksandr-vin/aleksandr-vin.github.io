@@ -20,6 +20,8 @@ It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Re
 
 [Install extension from App Store (TBD)](https://aleksandr.vin/a-link-to-app-store)
 
+[Install extension from Chrome Web Store](https://chromewebstore.google.com/detail/refresh-button-worshiper/ffifkamlageigkonfgjdildmdkpmjhde)
+
 {% include youtubePlayer.html id="fmiJrmIn7ys" %}
 
 <hr>
@@ -29,7 +31,7 @@ It is fun project and was a *learning-while-doing*.
 ## Name
 
 Originally I called it **Azure Refresh Button Worshiper** but Apple found it a copycat and rejected the name. So it is renamed to
-**Refresh Button Worshiper** --- I liek it more, but I see a bit more hussle to market it without "Azure" in the name. Plus now it calls
+**Refresh Button Worshiper** --- I like it more, but I see a bit more hussle to market it without "Azure" in the name. Plus now it calls
 for a generic application: and I think I'll pause it for a bit, until I find something similarly annoying as Refresh buttons on Azure.
 
 ## Pricing
