@@ -116,7 +116,7 @@ API Secret:  6hPC.......................rV3liV
 
 Then you need to generate token(s) for participants, using this nodejs script, for ex.:
 
-```nodejs
+```
 const { AccessToken } = require('livekit-server-sdk');
 
 const apiKey = "APIX......Qu9";
@@ -142,8 +142,10 @@ const roomName = 'name-of-room';
 Then joining the room as ChatGPT from web app and as User with `url` and `token` rewritten by Charles.
 
 Searching further for e2ee_key brings the end-to-end encryption functionality in LiveKit, which appeared to be
-not very supported in their React client and eventually the pure js sample https://github.com/livekit/client-sdk-js/tree/main#sdk-sample
+not very supported in their React client and eventually the pure js sample
+[https://github.com/livekit/client-sdk-js/tree/main#sdk-sample](https://github.com/livekit/client-sdk-js/tree/main#sdk-sample)
 was able to perform full room connections with decrypted audio. Thus ChatGPT iOS app is waiting for something else, as it shows
 "Connecting..." while already joined the room and audio is working and after some seconds it disconnects.
 
-Parking it here for now. Asked a quesiton on OpenAI forum about the watch app: https://community.openai.com/t/chatgpt-voice-on-apple-watch/505591
+Parking it here for now. Asked a quesiton on OpenAI forum about the watch app:
+[https://community.openai.com/t/chatgpt-voice-on-apple-watch/505591](https://community.openai.com/t/chatgpt-voice-on-apple-watch/505591)
