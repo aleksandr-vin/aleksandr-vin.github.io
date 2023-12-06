@@ -5,13 +5,15 @@ tags: mobile hackers chatgpt webrtc livekit proxy wss audio reverse-engineering 
 
 ChatGPT iOS app has voice capabilities. There is no watchOS support. But I want it like Siri on my wrist.
 
-Writing an watchOS app capable of recording an audio and stopping when no more text is transcribed (with the help of iOS companion app) is done. Now I need to reverse engineer the networking part of ChatGPT iOS app.
+Writing an watchOS app capable of recording an audio and stopping when no more text is transcribed
+(with the help of iOS companion app) is done. Now I need to reverse engineer the networking part of ChatGPT iOS app.
 
 ## Reversing ChatGPT iOS app
 
 Using Charles proxy, and installing + trusting it's CA certificate on iPhone allows us to see what's is called by the app and what's inside.
 
-Apart from some comms to https://chat.openai.com, that checks server status and profile data, we see one reply from https://ios.chat.openai.com/voice/get_token that points to wss://chatgpt.livekit.cloud:
+Apart from some comms to https://chat.openai.com, that checks server status and profile data, we see one reply
+from https://ios.chat.openai.com/voice/get_token that points to wss://chatgpt.livekit.cloud:
 
 ```shell
 % curl \
@@ -144,3 +146,4 @@ not very supported in their React client and eventually the pure js sample https
 was able to perform full room connections with decrypted audio. Thus ChatGPT iOS app is waiting for something else, as it shows
 "Connecting..." while already joined the room and audio is working and after some seconds it disconnects.
 
+Parking it here for now. Asked a quesiton on OpenAI forum about the watch app: https://community.openai.com/t/chatgpt-voice-on-apple-watch/505591
