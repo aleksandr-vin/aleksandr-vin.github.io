@@ -1,6 +1,6 @@
 ---
 layout: redirect
 title: CV
-permalink: /cv/
+permalink: /CV/
 redirect_to: "/files/CV.Aleksandr.Vinokurov.October.2023.pdf"
 ---
