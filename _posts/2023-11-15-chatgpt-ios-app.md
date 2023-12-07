@@ -1,5 +1,5 @@
 ---
-title: "CHatGPT iOS App"
+title: "ChatGPT iOS App"
 tags: mobile hackers chatgpt webrtc livekit proxy wss audio reverse-engineering debugging
 ---
 
