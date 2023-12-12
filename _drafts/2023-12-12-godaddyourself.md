@@ -90,7 +90,8 @@ Some notes on the transfer process. Transfer guide from namecheap warns about a 
 
 So I decided to make the transfer ASAP and not draw chances.
 
-In short, GD interface is a bummer: every time you open your domain from Domain Portfolio, it nags with inconsistent dialogs like:
+In short, GD interface is a bummer: not only it reloads the page almost on every click of their interface, but also,
+every time you open your domain from Domain Portfolio, it nags with inconsistent dialogs like:
 - "Turn off autorenewal ..." --- you click continue (you already decided to transfer it away, why not), and it says "There was a
   problem ..."
 - "Turn off domain privacy ..." --- why you ask me that if I made no attempts to turn it off?
@@ -116,5 +117,34 @@ Portfolio_, nothing in _Transfers_. Okay --- I've found it only in billing recei
 
 Hope everything will be fine, as namecheap is still _awaiting release from previous registrar_:
 
-![awaiting release from previous registrar](/img/Screenshot%202023-12-12%20at%2012.32.37.png)
+![Awaiting release from previous registrar](/img/Screenshot%202023-12-12%20at%2012.32.37.png)
 
+
+## And some more fun/ck from GD
+
+I have some other domains, that I don't care much, but their are still mine for 1/2 year. One has a nice-looking name and GD always
+nags me with it's estimated value of $293, which I've baught for £1.69. So, being around the GD interfaces in recent hours,
+I've decided to list it for sale with this hustlers. I clicked _List for Sale_ button, set the price and clicked _Publish Listing_.
+
+Then GD brings in some random sheet and informed me that it will make an account in some _Afternic_ (WTF?) for me. Okay, anyway,
+clicking further... and bum! An error --- "it didn't make it". Trying again the listing process: setting the price, publishing,
+... and now I need to _"sign into Afternic"_. With what password? Checking email...
+
+![Email from Afternic](/img/Screenshot%202023-12-12%20at%2012.48.19.png){: width="50%" }
+
+So with GD account, right...
+
+![There's already an Afternic account associated with your email](/img/Screenshot%202023-12-12%20at%2012.50.47.png){: width="50%" }
+
+So they do create an account on my email and failed to transfer any knowledge about it to me and now I need to link it (do I?) or
+just to log-in to a system I learned 2 min ago for what?... I've already forgot what I was aiming for?
+
+So this is all so bulltish to me, that I'm running out of words.
+
+And yes, I thought that was it. Check yourself: I can't reset my password as:
+
+> No accounts exist with that username.
+
+![No accounts exist with that username.](/img/Screenshot%202023-12-12%20at%2012.55.34.png){: width="50%" }
+
+Go F! yourself GoDaddy!
