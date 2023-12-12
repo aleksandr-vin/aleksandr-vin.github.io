@@ -107,10 +107,10 @@ button, which you click and after your approval the whole _Transfers_ page mimic
 in our UI!
 
 Page, when you have something:
-![Transfers page, when you have something](/img/Screenshot 2023-12-12 at% 12.08.22.png)
+![Transfers page, when you have something](/img/Screenshot 2023-12-12 at 12.08.22.png)
 
 Same page, when you have nothing:
-![Transfers page, when you have nothing](/img/Screenshot 2023-12-12 at% 12.24.49.png)
+![Transfers page, when you have nothing](/img/Screenshot 2023-12-12 at 12.24.49.png)
 
 And after you approved the transfer, GD will not render your domain name anywhere on it's pages. Very nice. No statuses in _Domain
 Portfolio_, nothing in _Transfers_. Okay --- I've found it only in billing receipts in order history.
