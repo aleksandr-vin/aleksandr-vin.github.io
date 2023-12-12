@@ -148,3 +148,5 @@ And yes, I thought that was it. Check yourself: I can't reset my password as:
 ![No accounts exist with that username.](/img/Screenshot%202023-12-12%20at%2012.55.34.png){: width="50%" }
 
 Go F! yourself GoDaddy!
+
+PS. Still _awaiting release from previous registrar_.
