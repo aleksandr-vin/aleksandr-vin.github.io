@@ -1,7 +1,0 @@
-#+TITLE: aleksandr.vin
-#+AUTHOR: Aleksandr Vinokurov
-#+DATE: 2021-02-23
-
-* Notes
-** [[https://www.virtualhere.com][VirtualHere USB server-client]]
-** [[https://www.next-mind.com/][NextMind BCI]]

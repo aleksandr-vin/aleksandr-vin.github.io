@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Keeping docs on GitHub"
 tags:   docs, github, encryption, security, idea
 ---

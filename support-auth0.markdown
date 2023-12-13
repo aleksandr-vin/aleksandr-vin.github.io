@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: Support Auth0
 permalink: /support/auth0/
 ---
