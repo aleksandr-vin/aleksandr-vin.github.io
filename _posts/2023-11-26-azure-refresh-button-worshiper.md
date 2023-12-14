@@ -19,7 +19,7 @@ deployments on Azure, I've made an MVP of such Safari Extension myself:
 It waits 10s after you stop moving mouse or typing keyboard, then clicks on **Refresh** button on the page. Only on `https://*.azure.com/*`.
 
 You can install extension from:
-- [App Store (TBD)](https://aleksandr.vin/a-link-to-app-store)
+- [App Store](https://apps.apple.com/app/refresh-button-worshiper/id6473451531)
 - [Chrome Web Store](https://chromewebstore.google.com/detail/refresh-button-worshiper/ffifkamlageigkonfgjdildmdkpmjhde)
 
 {% include youtubePlayer.html id="fmiJrmIn7ys" %}
@@ -36,10 +36,12 @@ for a generic application: and I think I'll pause it for a bit, until I find som
 
 ## Pricing
 
-Refresh Button Worshiper is available for $0.99 on the App Store, with no
+Refresh Button Worshiper is available for $0.99 on the
+[App Store](https://apps.apple.com/app/refresh-button-worshiper/id6473451531), with no
 in-app purchases, no ads, and no tracking. It’s universal so you can use it on
 iPhone, iPad, and Mac. I hope you find it useful. It is also available for free
-on Chrome Web Store (if you're interested why there for free -- send me an email)
+on [Chrome Web Store](https://chromewebstore.google.com/detail/refresh-button-worshiper/ffifkamlageigkonfgjdildmdkpmjhde)
+(if you're interested why there for free -- send me an email)
 and obviously you can compile the Apple app yourself from the codebase.
 
 ## Refresh Button Worshiper Privacy Policy
