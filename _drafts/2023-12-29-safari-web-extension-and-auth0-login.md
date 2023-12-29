@@ -49,7 +49,7 @@ in apple support forum.
 
 ### 4. Login on your site and then window.open options page + `#access-token=xyz`
 
-That should not expose the secret on the internet as browser should open extension options page netively. But Chrome blocks the page chrome-extension://djjiokkmnhkmccblpacjpegaaiebcmhm/options.html when you try to open it from the site.
+That should not expose the secret on the internet as browser should open extension options page netively. But Chrome blocks the page chrome-extension://djjiokkmnhkmccblpacjpegaaiebcmhm/options.html when you try to open it from the site, unless you specify the page in `"web_accessible_resources"`!
 
 
 ### 5. Login on your site, hide a div tag with secret on the page and find it with content script
