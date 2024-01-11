@@ -47,7 +47,7 @@ then
 fi
 
 palette="/tmp/create-gif-automator-palette.png"
-filters="fps=15,scale=720:-1:flags=lanczos"
+filters="fps=15,scale=-1:-1:flags=lanczos"
 
 output_dir="/Users/aleksandrvin/Developer/marktplaats-gpt-site/src/assets/get-started"
 output_filename="$(basename "${1%%.mp4}.gif")"
