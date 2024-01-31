@@ -58,6 +58,29 @@ good alternative to do it differently: in Route Handlers or React Server Compone
 ones that you pet yourself). This brings us to a hosting for server side, which I would need anyway. It could be worth to check
 Vercel services for hosting next.js projext all-in-one.
 
+Other option could be static rendering: this way a new task would result in a new build pipeline that will compile a new JD into repo
+and publish it to hosting. Nice finding: [Partial Prerendering](https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model).
+
+## State in URL
+
+[Chapter 11](https://nextjs.org/learn/dashboard-app/adding-search-and-pagination) has a nice example on how to do it easily.
+
+```
+const handleSearch = useDebouncedCallback((term) => {
+    console.log(`Searching... ${term}`);
+
+    const params = new URLSearchParams(searchParams);
+    params.set('page', '1');
+    if (term) {
+      params.set('query', term);
+    } else {
+      params.delete('query');
+    }
+    replace(`${pathname}?${params.toString()}`);
+  },
+  300);
+```
+
 Further reading:
 
 1. https://nextjs.org/docs/app/building-your-application/optimizing/images
