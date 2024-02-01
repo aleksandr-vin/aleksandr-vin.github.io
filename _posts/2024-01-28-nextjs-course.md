@@ -81,6 +81,10 @@ const handleSearch = useDebouncedCallback((term) => {
   300);
 ```
 
+## Next steps
+
+Overall it is a nice fresh course, I like it! Definetely worth checking the [next steps](https://nextjs.org/learn/dashboard-app/next-steps).
+
 Further reading:
 
 1. https://nextjs.org/docs/app/building-your-application/optimizing/images
@@ -88,3 +92,8 @@ Further reading:
 3. https://fonts.google.com/specimen/Workbench
 4. Web performance: multimedia https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia
 5. Web fonts: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+6. https://nextjs.org/blog/security-nextjs-server-components-actions
+7. https://www.npmjs.com/package/eslint-plugin-jsx-a11y
+8. https://web.dev/learn/privacy
+9. https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+10. https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images
