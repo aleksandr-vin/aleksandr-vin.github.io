@@ -1,7 +1,16 @@
+version: "3.8"
+
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: ruby:2
+    command: |
+      sh -c 'bundle install && exec jekyll serve --host 0.0.0.0 --drafts'
+    working_dir: /code
     volumes:
-      - .:/site
+      - .:/code
+      - gems:/usr/local/bundle/gems
     ports:
-      - '4000:4000'
+      - "4000:4000"
+
+volumes:
+  gems:
