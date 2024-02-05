@@ -36,4 +36,4 @@ Features, which can be added later:
    on their custom profiles (still all the description will be available, they just have a differnet POV)
 2. Analytics of the job market from job seekers POV: how priorities differ for different levels, fields and technologies, maybe locations, etc.
 
-These are some materialized thoughts around the topic of hard-to-work-with job descriptions.
+These are some materialised thoughts around the topic of hard-to-work-with job descriptions.
