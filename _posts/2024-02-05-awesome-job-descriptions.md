@@ -7,12 +7,12 @@ I am searching for a new job now, market is difficult, following the lay-offs fr
 
 One thing I've noticed, is that
 all of the job descriptions are written in very different styles/forms/structures. And that eats time, when you need to sieve through a lot of them. It does
-not look like one standard will fit, every searcher is different and in different situation, which make them focus on differnt aspects ATM. Plus you focus
-on different aspects if it is a job in a known company or a completely unknown one.
+not look like one standard will fit, every searcher is different and in different situation, which make them focus on different aspects at the moment. Plus you
+focus on different aspects if it is a job in a known company or a completely unknown one.
 
-One day I've stumbled upon a short post in LN, where a guy asked recruiters to stop writing longreads started with _how good the company is and how happy
-you would be if working for it_ and just make a condenced _responsibilities_, _tasks_, _requirements_ + _compensation_, and then follow it with the company
-overview. He immetiately got response from peer recruiters asking fellow applicants to stop sending long CVs (many ai-generated crap, nowdays). Anyway the
+One day I've stumbled upon a short post in LN, where a guy asked recruiters to stop writing long-reads started with _how good the company is and how happy
+you would be if working for it_ and just make a condensed _responsibilities_, _tasks_, _requirements_ + _compensation_, and then follow it with the company
+overview. He immetiately got response from peer recruiters asking fellow applicants to stop sending long CVs (many are ai-generated crap, nowadays). Anyway the
 problem exists.
 
 And the problem can have a solution. At least for me now. Or how I see it could be working for me:
