@@ -88,6 +88,25 @@ const handleSearch = useDebouncedCallback((term) => {
 
 Overall it is a nice fresh course, I like it! Definetely worth checking the [next steps](https://nextjs.org/learn/dashboard-app/next-steps).
 
+### Updates
+
+#### React 18 Concurrent Rendering with Low Priority Updates:
+
+```
+startTransition(() => {
+  lowPriorityUpdate()
+})
+```
+
+#### Core Web Vitals
+
+- Time To First Byte
+- First Contentful Paint
+- Largest Contentful Paint
+- Time To Interactive
+- Cumulative Layout Shift
+- First Input Delay
+
 Further reading:
 
 ### Optimization
@@ -97,6 +116,7 @@ Further reading:
 3. Web performance, multimedia: [developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia](https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia)
 4. Web fonts: [developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
 5. Accessibility: [www.npmjs.com/package/eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+6. https://swr.vercel.app
 
 ### Security & Privacy
 
