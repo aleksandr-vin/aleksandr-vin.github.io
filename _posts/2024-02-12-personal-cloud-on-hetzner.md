@@ -247,6 +247,10 @@ So now I can peek on what's on ingress "newsletter":
 {"_msg":"143.198.214.253 - - [12/Feb/2024:22:28:08 +0000] \"\\x16\\x03\\x01\\x01\\x04\\x01\\x00\\x01\\x00\\x03\\x03\\x99}+\\xFA\\xFDN\\xFE\\x16Bw\\x8D\\xBB\\xE6\\xFE\\xF5\\xE6E~\\xB2\\x83/lf\\xC5\\xAC|\\xE8\\xC9\\x9B\\xD2\\x1D^ u\\xC0~\\xDA\\xB6\\x80\\x7F\\x81e\\xC1\\xBE\u003c\\xD4W\\xC3\\xFCo\\xBA\\xBB2\\x17x\\xE2Y0\\xAE\\x8Cy~\\xC5\\x16\\xF1\\x00&\\xC0+\\xC0/\\xC0,\\xC00\\xCC\\xA9\\xCC\\xA8\\xC0\\x09\\xC0\\x13\\xC0\" 400 150 \"-\" \"-\" 0 0.170 [] [] - - - - 9e74286fe7d9fba47af575eba27da895","_stream":"{kubernetes_container_name=\"nginx-ingress-microk8s\",kubernetes_pod_name=\"nginx-ingress-microk8s-controller-4zr2m\",stream=\"stdout\"}","_time":"2024-02-12T22:28:08.470892Z"}
 ```
 
+And see how metrics are collected:
+
+![Grafana Virctori Metrics dashboard with some storage full ETA](/img/Screenshot 2024-02-13 at 00.51.16.png){: width="100%" }
+
 ### Security scans
 
 Okay, k8s is getting more and more containers, how about some security. Trivy is a known pal for me, was setting it up some years ago in build
