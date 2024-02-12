@@ -352,7 +352,7 @@ EOF
 
 So far so good, but NEXT.js app is using `@vercel/postgres` to talk to database and Vercel Postgres is using a Neondatabase
 [websocket->TCP proxy](https://github.com/neondatabase/wsproxy) to access PG. This [post](https://gal.hagever.com/posts/running-vercel-postgres-locally)
-helps with getting NEXT.js app running with local postgres. I can go and through away `@vercel/postgres` but I decided to not do that (now) but instead
+helps with getting NEXT.js app running with local Postgres. I could go and throw away `@vercel/postgres` but I decided to not do that (now) but instead
 configure [sidecar](https://postgres-operator.readthedocs.io/en/latest/user/#sidecar-support) with this proxy. Add to _manifests/minimal-postgres-manifest.yaml_:
 
 ```
