@@ -3,15 +3,17 @@ title: "Personal Cloud on Hetzner"
 tags: learning devops cloud hetzner server kubernetes postgres kubernetes-operators victoria-metrics victoria-logs microk8s vercel nextjs
 ---
 
-After getting something close to MVP with {% post_url 2024-02-05-awesome-job-descriptions %} web app, I deployed it to Vercel and quickly
-found that waiting for OpenAI's Assistant does not fit within 10 seconds timeout for Hobby plan. Plus I saw Vercel's healthcheck was
-triggering /list route which fetches table from PG, and that counts against database compute hours. I believe there is some smartness
-in figuring which route to "healthcheck" :)
+After getting somewhere close to MVP with [Awesome Job Descriptions]({% post_url 2024-02-05-awesome-job-descriptions %}) web app,
+I've deployed it to Vercel and quickly realized that waiting for OpenAI's Assistant does not fit within 10 seconds timeout for their Hobby plan.
+Plus I saw that Vercel's healthcheck triggered `/list` route which is fetching table from Postgres, what is counting towards database compute hours.
+I believe there is some smartness in figuring out which route to "healthcheck" :)
 
 ## The Server
 
-The former actually made me thinking about alternative architect for the project. But I've recently heared about one old "friend", with whom
-I did part about 8 years ago. That was Hetzner. So Friday, I checked server auction, there were 1261 severs:
+That made me thinking about alternative architect for the project -- I deliberately chose simple and bold way of getting thing done and I do not
+want to complicate things initially. But everything looked to be asking for more services which will have their personal hobby plans which I will
+be struggling to fit int... That's why I've decided to go for "my personal cloud". I was with Hetzner 10 years ago, and decided to chekc it again.
+Last Friday, I checked server auction, where there were 1261 severs:
 
 ```
 % jq  <./servers.json  '.server[]|.id' | wc -l
@@ -31,17 +33,17 @@ Plus static IP, all for 30,70 per month.
 
 ## The OS
 
-Server was booted in rescue boot where it was pretty simple to install Ubuntu LTS (22.04) and setup software RAID 1. In a couple of minutes I've had Ubuntu server running with all
-but 22/tcp allowed on public interface (thanks, UFW). Next step was to go with k8s.
+Server was delivered in rescue boot where it was pretty simple to install Ubuntu LTS (22.04) and setup software RAID 1. In a couple of minutes I've had
+Ubuntu server running with all but 22/tcp denied on public interface (thanks, UFW). Next step was to go with k8s.
 
 ## The k8s
 
 I don't want to neither maintain nor clean different dependencies for my projects, would that be Node.js, Python, Rust or whatever I end up playing with. That
-means I need to invest some time in installing Kubernetes, so I can easily `helm install` things in containers and `helm delete` them after I don't need them
+means I will invest some time in installing Kubernetes, so I can easily `helm install` things in containers and `helm delete` them after I don't need them
 anymore.
 
-The choice was fast: I've installed microk8s via snap. Picking up some ports to allow with UFW -- that took some time to read the internet and logs, but here
-is what I ended up with:
+The implementation choice was made fast: I've installed **microk8s** via **snap**. Picking up some ports to allow with UFW -- that took some time to read the
+Internet and logs, but here is what I ended up with:
 
 ```
 $ sudo ufw status verbose
@@ -78,18 +80,18 @@ Anywhere (v6)              ALLOW OUT   Anywhere (v6) on vxlan.calico
 
 ### Notes on firewall rules
 
-1. Some rules are not needed, I suspect two rules for `10.244.0.0/16` also, but I don't want to test it ATM: I'll have my web app deployed and
+1. Some rules are not needed, I suspect two for `10.244.0.0/16` are also not used, but I don't want to test it ATM: I'll have my web app deployed and
    will do the cleanup with a reference.
-2. I decided to allow Kubernetes API port 16443 from my home network IP instead of bringing VPN on the server, as connection already uses TLS
-   plus client secret, so I can just use `kubectl` from my home network.
+2. I allowed Kubernetes API port 16443 traffic from my home network IP instead of bringing VPN on the server, as connection already uses TLS
+   with a client secret, this way I can just use `kubectl` from my home network.
 3. Port 30779 is for Portainer, so I can access it also from home network without forwarding ports with `kubectl`.
 
 ### Basic ingress test
 
-I need to expose web apps to the internet, right? So adding ingress: with `microk8s enable ingress`, getting one based on NGiNX reverse-proxy
-which should be fine. And deploying simple Apache server, inspired by this manifest:
+I need to expose web apps to the internet, right? That's why I am adding ingress. With `microk8s enable ingress`, getting one based on NGiNX reverse-proxy
+which should be just fine. And deploying simple Apache server, from this manifest:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -98,17 +100,17 @@ spec:
   selector:
     matchLabels:
       app: apache
-  replicas: 2  # ensures 2 instances are running for high availability
+  replicas: 2 # ensures 2 instances are running for high availability
   template:
     metadata:
       labels:
         app: apache
     spec:
       containers:
-      - name: apache-container
-        image: httpd:2.4  # using the official Apache image
-        ports:
-        - containerPort: 80  # default Apache port
+        - name: apache-container
+          image: httpd:2.4 # using the official Apache image
+          ports:
+            - containerPort: 80 # default Apache port
 ---
 apiVersion: v1
 kind: Service
@@ -118,9 +120,9 @@ spec:
   selector:
     app: apache
   ports:
-  - protocol: TCP
-    port: 80  # the service port
-    targetPort: 80  # the target port on the Apache containers
+    - protocol: TCP
+      port: 80 # the service port
+      targetPort: 80 # the target port on the Apache containers
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -128,21 +130,23 @@ metadata:
   name: apache-ingress
 spec:
   rules:
-  - host: pumpking.aleksandr.vin
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: apache-service
-            port:
-              number: 80
+    - host: pumpking.aleksandr.vin
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: apache-service
+                port:
+                  number: 80
 ```
 
-After adding DNS `A` record to point sub-domain to my server's IP, I've got the `It works!` page on port 80/tcp (openning 80/tcp and later 443/tcp
-I got a sick feeling in the pit of my stomach). Following some consultations with ChatGPT and
-setting up **cert-manager**, I've finally got Let's Encrypt certifaicate issued for my subdomain. These parts were initially added to apache's ingress:
+After adding DNS `A` record to point sub-domain to my server's IP, I've got the `It works!` page on port 80/tcp. Openning 80/tcp and later 443/tcp
+I got a sick feeling in the pit of my stomach.
+
+Then, following some consultations with ChatGPT and
+setting up **cert-manager**, I've finally got a _Let's Encrypt_ certifaicate issued for my sub-domain. These parts were initially added to apache's ingress:
 
 ```
 ...
@@ -201,14 +205,21 @@ rules:
 
 That ended up with a certificate in k8s secrets.
 
-### Metrics, Logs
+```
+% kubectl get secret -o wide
+NAME                                                              TYPE                 DATA   AGE
+pumpking-aleksandr-vin-tls                                        kubernetes.io/tls    2      3d8h
+...
+```
+
+### Metrics and Logs
 
 On 7th of Feb, [@oliora mentioned Victoria Metrics in twitter](https://x.com/oliora/status/1755158245897842966?s=20) -- I had no previous experience
 with them but with Prometheus and Grafana, so I decided that it could be a nice time to try it. Installed `victoria-metrics-single` and `grafana`
 helm charts plus `victoria-logs-single`: now all k8s metrics are collected in vm and logs in vl. The Victoria Logs are not yet very mature, comparing
-Elastic features, but looks promising and could be worth to follow.
+to Elastic features, but it looks promising and could be worth to follow.
 
-To access Grafana and Victoria Logs I do port forwarding with `kubectl` to their respected pods, having such shell functions is enough for me:
+To access Grafana and Victoria Logs, I do port forwarding with `kubectl` to their respected pods, having these shell functions is good enough for me:
 
 ```bash
 pf-grafana() {
@@ -237,7 +248,7 @@ EOF
 }
 ```
 
-So now I can peek on what's on ingress "newsletter":
+Now I can read ingress "newsletter":
 
 ```shell
 % while true ; do curl http://localhost:9428/select/logsql/query -d 'query=_stream:{kubernetes_container_name="nginx-ingress-microk8s"} _time:1m' ; sleep 60 ; done
@@ -247,17 +258,17 @@ So now I can peek on what's on ingress "newsletter":
 {"_msg":"143.198.214.253 - - [12/Feb/2024:22:28:08 +0000] \"\\x16\\x03\\x01\\x01\\x04\\x01\\x00\\x01\\x00\\x03\\x03\\x99}+\\xFA\\xFDN\\xFE\\x16Bw\\x8D\\xBB\\xE6\\xFE\\xF5\\xE6E~\\xB2\\x83/lf\\xC5\\xAC|\\xE8\\xC9\\x9B\\xD2\\x1D^ u\\xC0~\\xDA\\xB6\\x80\\x7F\\x81e\\xC1\\xBE\u003c\\xD4W\\xC3\\xFCo\\xBA\\xBB2\\x17x\\xE2Y0\\xAE\\x8Cy~\\xC5\\x16\\xF1\\x00&\\xC0+\\xC0/\\xC0,\\xC00\\xCC\\xA9\\xCC\\xA8\\xC0\\x09\\xC0\\x13\\xC0\" 400 150 \"-\" \"-\" 0 0.170 [] [] - - - - 9e74286fe7d9fba47af575eba27da895","_stream":"{kubernetes_container_name=\"nginx-ingress-microk8s\",kubernetes_pod_name=\"nginx-ingress-microk8s-controller-4zr2m\",stream=\"stdout\"}","_time":"2024-02-12T22:28:08.470892Z"}
 ```
 
-And see how metrics are collected:
+And see metrics collected:
 
 ![Grafana Virctori Metrics dashboard with some storage full ETA](/img/Screenshot 2024-02-13 at 00.51.16.png){: width="100%" }
 
-### Security scans
+### Security
 
-Okay, k8s is getting more and more containers, how about some security. Trivy is a known pal for me, was setting it up some years ago in build
-pipelines. Added `microk8s enable trivy` to bring kubernetes operators for vulnerability and configuration scans. Very handy: it runs regular
-scans for configmaps and containers and create reports, which you can list and **describe** later.
+Okay, k8s is getting more and more containers, how about some security. **Trivy** is a known pal for me, was setting it up some years ago in build
+pipelines. Added `microk8s enable trivy` to bring [kubernetes operators for vulnerability and configuration scans](https://github.com/aquasecurity/trivy-operator).
+Very handy: it runs regular scans for configmaps and containers and create reports, which you can _list_ and _describe_ later.
 
-I list and highlight reports every time I **activate** `KUBECONFIG` in my terminal:
+I list and highlight reports every time I _activate_ `KUBECONFIG` in my terminal:
 
 ```bash
 kubectl get vulnerabilityreports --all-namespaces -o wide | colorize '\sTrivy\s+.+\s+[1-9][0-9]*\s+[0-9]+\s+[0-9]+\s+[0-9]+\s+[0-9]+'
@@ -269,25 +280,29 @@ kubectl get configauditreports --all-namespaces -o wide | colorize '\sTrivy\s+.+
 
 ## Database
 
-It was tempting to bring in Supabase -- it really could be worth setting it up for "my personal cloud", but after doing some research on the
-internet, I did not find helm charts, which are maintained. For example, official ones
+It was tempting to bring in Supabase -- that thing could be worth setting up for "my personal cloud". But after doing some research on the
+internet, I did not find living helm charts. For example, official ones
 [github.com/supabase-community/supabase-kubernetes](https://github.com/supabase-community/supabase-kubernetes/tree/main) are 1 year old.
 And I don't spare much time to spend on building one myself.
 
-That's why I've opted for Postgres operator, which makes it easy to deploy Postgres clusters on k8s and then maintain them there. Devs in
-Zalando made a very good job and documented it well: [quickstart/](https://postgres-operator.readthedocs.io/en/latest/quickstart/) is very
+That's why I've opted for Postgres operator, which makes it easy to deploy and manage Postgres clusters on k8s. Devs in
+Zalando made a good job and documented it well: [quickstart](https://postgres-operator.readthedocs.io/en/latest/quickstart/) is very
 easy to follow. Plus you'll get Postgres Operator UI to maange your pg clusters.
 
-One thing could be missed is pgAdmin, which is not so hard to install separately: `helm install my-pgadmin runix/pgadmin4 -f pgadmin4-values.yaml`.
+One thing could be missing is **pgAdmin**, which is not so hard to install separately:
 
-Then [creating a Postgres cluster](https://postgres-operator.readthedocs.io/en/latest/quickstart/#create-a-postgres-cluster) now is a matter
+```
+helm install my-pgadmin runix/pgadmin4 -f pgadmin4-values.yaml
+```
+
+Then [creating a Postgres cluster](https://postgres-operator.readthedocs.io/en/latest/quickstart/#create-a-postgres-cluster) is a matter
 of creating a `postgres` resource with:
 
 ```
 kubectl create -f manifests/minimal-postgres-manifest.yaml
 ```
 
-From a manifest:
+From a manifest like this:
 
 ```
 kind: "postgresql"
@@ -323,7 +338,7 @@ spec:
       memory: 500Mi
 ```
 
-I've added `10.1.0.0/16` IP range to allow connecting from pgAdmin. Follow this
+I've added `10.1.0.0/16` IP range to allow connections from pgAdmin. Follow this
 [section](https://postgres-operator.readthedocs.io/en/latest/quickstart/#connect-to-the-postgres-cluster-via-psql)
 to get password, and do `kubectl port-forward constantia-0 5432`, where `constantia-0` would be pod name for main
 DB instance.
@@ -354,10 +369,16 @@ EOF
 }
 ```
 
+### Sidecars
+
 So far so good, but NEXT.js app is using `@vercel/postgres` to talk to database and Vercel Postgres is using a Neondatabase
-[websocket->TCP proxy](https://github.com/neondatabase/wsproxy) to access PG. This [post](https://gal.hagever.com/posts/running-vercel-postgres-locally)
-helps with getting NEXT.js app running with local Postgres. I could go and throw away `@vercel/postgres` but I decided to not do that (now) but instead
-configure [sidecar](https://postgres-operator.readthedocs.io/en/latest/user/#sidecar-support) with this proxy. Add to _manifests/minimal-postgres-manifest.yaml_:
+[websocket->TCP proxy](https://github.com/neondatabase/wsproxy) to access PG.
+
+This [post](https://gal.hagever.com/posts/running-vercel-postgres-locally)
+helps with getting NEXT.js app running with local Postgres. I could throw away `@vercel/postgres` but I decided to not to do that (now) but instead
+configure a [sidecar](https://postgres-operator.readthedocs.io/en/latest/user/#sidecar-support) with this proxy.
+
+Add to _manifests/minimal-postgres-manifest.yaml_:
 
 ```
   sidecars:
@@ -382,7 +403,11 @@ configure [sidecar](https://postgres-operator.readthedocs.io/en/latest/user/#sid
           memory: 100Mi
 ```
 
-Then recreate the db cluster and forward port to it with `kubectl port-forward constantia-0 5433:80`.
+Then recreate the db cluster and forward port to it with:
+
+```
+kubectl port-forward constantia-0 5433:80
+```
 
 ## The Web App
 
