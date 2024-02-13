@@ -15,7 +15,7 @@ want to complicate things initially. But everything looked to be asking for more
 be struggling to fit int... That's why I've decided to go for "my personal cloud". I was with Hetzner 10 years ago, and decided to chekc it again.
 Last Friday, I checked server auction, where there were 1261 severs:
 
-```
+```shell
 % jq  <./servers.json  '.server[]|.id' | wc -l
     1261
 ```
@@ -45,7 +45,7 @@ anymore.
 The implementation choice was made fast: I've installed **microk8s** via **snap**. Picking up some ports to allow with UFW -- that took some time to read the
 Internet and logs, but here is what I ended up with:
 
-```
+```shell
 $ sudo ufw status verbose
 Status: active
 Logging: on (low)
@@ -148,7 +148,7 @@ I got a sick feeling in the pit of my stomach.
 Then, following some consultations with ChatGPT and
 setting up **cert-manager**, I've finally got a _Let's Encrypt_ certifaicate issued for my sub-domain. These parts were initially added to apache's ingress:
 
-```
+```yaml
 ...
 metadata:
   ...
@@ -171,7 +171,7 @@ Then it took some time debugging, as apache's ingress `- path: /` appeared to be
 ...
 ```
 
-```
+```shell
 $ microk8s kubectl get ingress -n default
 NAME                        CLASS    HOSTS                    ADDRESS     PORTS     AGE
 apache-ingress              public   pumpking.aleksandr.vin   127.0.0.1   80, 443   41m
@@ -180,32 +180,32 @@ cm-acme-http-solver-7xmfx   <none>   pumpking.aleksandr.vin               80    
 
 And this workaround was found for apache's ingress:
 
-```
+```yaml
 rules:
   - host: pumpking.aleksandr.vin
     http:
       paths:
-      - path: /.well-known/acme-challenge/
-        pathType: Prefix
-        backend:
-          service:
-            # Use the solver service created by cert-manager. You need to find the correct name.
-            # It should follow the pattern 'cm-acme-http-solver-xxxx'.
-            name: cm-acme-http-solver-xxxx  # Replace 'xxxx' with the actual solver service suffix.
-            port:
-              number: 80
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: apache-service
-            port:
-              number: 80
+        - path: /.well-known/acme-challenge/
+          pathType: Prefix
+          backend:
+            service:
+              # Use the solver service created by cert-manager. You need to find the correct name.
+              # It should follow the pattern 'cm-acme-http-solver-xxxx'.
+              name: cm-acme-http-solver-xxxx # Replace 'xxxx' with the actual solver service suffix.
+              port:
+                number: 80
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: apache-service
+              port:
+                number: 80
 ```
 
 That ended up with a certificate in k8s secrets.
 
-```
+```shell
 % kubectl get secret -o wide
 NAME                                                              TYPE                 DATA   AGE
 pumpking-aleksandr-vin-tls                                        kubernetes.io/tls    2      3d8h
@@ -291,20 +291,20 @@ easy to follow. Plus you'll get Postgres Operator UI to maange your pg clusters.
 
 One thing could be missing is **pgAdmin**, which is not so hard to install separately:
 
-```
+```shell
 helm install my-pgadmin runix/pgadmin4 -f pgadmin4-values.yaml
 ```
 
 Then [creating a Postgres cluster](https://postgres-operator.readthedocs.io/en/latest/quickstart/#create-a-postgres-cluster) is a matter
 of creating a `postgres` resource with:
 
-```
+```shell
 kubectl create -f manifests/minimal-postgres-manifest.yaml
 ```
 
 From a manifest like this:
 
-```
+```yaml
 kind: "postgresql"
 apiVersion: "acid.zalan.do/v1"
 
@@ -380,32 +380,32 @@ configure a [sidecar](https://postgres-operator.readthedocs.io/en/latest/user/#s
 
 Add to _manifests/minimal-postgres-manifest.yaml_:
 
-```
-  sidecars:
-    - name: wsproxy
-      image: ghcr.io/neondatabase/wsproxy:latest
-      env:
-        - name: APPEND_PORT
-          value: "localhost:5432"
-        - name: ALLOW_ADDR_REGEX
-          value: ".*"
-        - name: LOG_TRAFFIC
-          value: "true"
-      ports:
-        - name: wsproxy-port
-          containerPort: 80
-      resources:
-        requests:
-          cpu: 50m
-          memory: 50Mi
-        limits:
-          cpu: 100m
-          memory: 100Mi
+```yaml
+sidecars:
+  - name: wsproxy
+    image: ghcr.io/neondatabase/wsproxy:latest
+    env:
+      - name: APPEND_PORT
+        value: "localhost:5432"
+      - name: ALLOW_ADDR_REGEX
+        value: ".*"
+      - name: LOG_TRAFFIC
+        value: "true"
+    ports:
+      - name: wsproxy-port
+        containerPort: 80
+    resources:
+      requests:
+        cpu: 50m
+        memory: 50Mi
+      limits:
+        cpu: 100m
+        memory: 100Mi
 ```
 
 Then recreate the db cluster and forward port to it with:
 
-```
+```shell
 kubectl port-forward constantia-0 5433:80
 ```
 
