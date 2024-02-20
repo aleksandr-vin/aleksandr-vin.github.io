@@ -153,7 +153,7 @@ setting up **cert-manager**, I've finally got a _Let's Encrypt_ certifaicate iss
 metadata:
   ...
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
   tls:
   - hosts:
@@ -161,6 +161,9 @@ spec:
     secretName: pumpking-aleksandr-vin-tls  # cert-manager will store the created certificate in this secret
   ...
 ```
+
+The `letsencrypt-staging` issuer should be replaced with `letsencrypt-prod` when you see that certificate is issued, otherwise
+you can hit strict request limits while debigging the flow.
 
 Then it took some time debugging, as apache's ingress `- path: /` appeared to be shadowing the cert-manager's ingress:
 
@@ -211,6 +214,15 @@ NAME                                                              TYPE          
 pumpking-aleksandr-vin-tls                                        kubernetes.io/tls    2      3d8h
 ...
 ```
+
+#### UPDATE
+
+I've found that this nginx ingress annotation will do the trick:
+
+```
+acme.cert-manager.io/http01-edit-in-place: "true"
+```
+
 
 ### Metrics and Logs
 
