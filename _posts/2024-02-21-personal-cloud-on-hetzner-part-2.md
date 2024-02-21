@@ -233,3 +233,6 @@ limits allready in place for container :)
 
 Note that *NODE_ENV* is commented out -- it is breaking the `npm run build` for now, I need to still figure it out.
 
+#### Benchmarking (the React app)
+
+SSR, and Partial Prerendering and no API calls from the client... how you benchmark that? TBD.
