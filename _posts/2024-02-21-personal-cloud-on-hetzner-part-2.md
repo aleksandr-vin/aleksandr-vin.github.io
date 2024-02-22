@@ -1,6 +1,6 @@
 ---
-title: "Personal Cloud on Hetzner"
-tags: learning devops cloud hetzner server kubernetes postgres kubernetes-operators victoria-metrics victoria-logs microk8s vercel nextjs
+title: "Personal Cloud on Hetzner, Part 2"
+tags: learning devops cloud hetzner server kubernetes victoria-metrics victoria-logs nextjs
 ---
 
 In the [previous part]({% post_url 2024-02-12-personal-cloud-on-hetzner %}) I've logged the process of setting up k8s on a Hetzner server.
@@ -94,7 +94,7 @@ That allows accessing it by local fqdn, like *dev-db-wsproxy.default.svc.cluster
 
 The first week showed me that it's a little bit tiresome to engage port forwarding for all the services like Grafana,
 Victoria Logs, Metrics, pgAdmin. So I decided to follow the whitelisting approach and added ingresses for all of them.
-There ingresses look like this:
+Their ingresses look like this:
 
 ```yaml
 ---
