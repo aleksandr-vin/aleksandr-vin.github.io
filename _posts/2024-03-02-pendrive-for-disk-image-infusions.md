@@ -76,6 +76,8 @@ Because I do want to do all the steps virtual, I'll be using QEMU to run it with
 qemu-system-x86_64 -m 4G -drive file=disk.img,format=raw,index=0,media=disk -boot d -cdrom Core-current.iso 
 ```
 
+NOTE: Use Control-Option-G to get out of the QEMU machine :)
+
 It appeared that *syslinux* either failed to run (on TinyCore and Alpine) or the Linux distro didn't start
 -- was heavy or I didn't wait till it does (Debian, Ubuntu, Puppy). I also don't want to install linux just
 for running the *syslinux* tool.  I've tried with these images:
@@ -145,6 +147,106 @@ EOF
 hdiutil detach /Volumes/BOOTABLE
 ```
 
-And booting it again. We should get into the user command prompt.
+And booting it again. We should get into the user command prompt `tc@box:~$ `.
 
-#### Adding start scripts
+
+#### Adding scripts
+
+Good idea to check the http://wiki.tinycorelinux.net/doku.php?id=wiki:remastering -- there you will notice an *Overlay using cat* approach, that's what we are going to start with.
+
+Let's extract the *core.gz* (slightly different call for *cpio* on macos):
+
+```bash
+mkdir core
+cd code
+gunzip -c /Volumes/Core/boot/core.gz | cpio -idmv
+```
+
+You'll see lots of errors regarding the devices, if you don't like them, run `sudo cpio` instead, but we will not need devices now.
+
+##### Overlay
+
+Simple check of how the *overlay* method works: let's put a *beep* executable into our *disk.img*.
+
+First we configure the QEMU to emulate PC speaker in the machine via the host sound device, by adding these options to
+`qemu-system-x86_64` call:
+
+```
+-audiodev coreaudio,id=audio0 -machine pcspk-audiodev=audio0
+```
+
+Now when you boot into linux, try running:
+
+```bash
+echo -ne "\007"
+```
+
+You should hear a **BEEP** through your sound system.
+
+Now let's make beeps more variable. The [beep](https://github.com/johnath/beep/) command line tool should do the trick.
+
+As for now, our linux is 32 bit, so we need to build *beep* for 32 bit architecht:
+
+```bash
+wget http://www.johnath.com/beep/beep-1.3.tar.gz
+tar zxvf beep-1.3.tar.gz
+docker run --rm -it -v $(pwd)/beep-1.3:/code --platform=linux/amd64 -w /code ubuntu:22.04 \
+  sh -c 'apt update && apt install -y gcc-multilib g++-multilib && gcc -m32 --static -o beep beep.c'
+cp beep-1.3/beep ./
+```
+
+Voila:
+
+```bash
+% file beep
+beep: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, BuildID[sha1]=2ef1d7d5633c8d375334e3a92739a18f4c48a157, for GNU/Linux 3.2.0, not stripped
+```
+
+Now the overlay magic, follow the hands:
+
+```bash
+ % hdiutil attach disk.img
+/dev/disk9          	FDisk_partition_scheme
+/dev/disk9s1        	DOS_FAT_32                     	/Volumes/BOOTABLE
+% echo beep | cpio -o -H newc | gzip -2 > beep.gz
+1751 blocks
+% cat /Volumes/BOOTABLE/core.gz beep.gz > /Volumes/BOOTABLE/my-core.gz
+% cat > /Volumes/BOOTABLE/syslinux/syslinux.cfg <<EOF
+DEFAULT vmlinuz
+LABEL vmlinuz
+    KERNEL ../vmlinuz
+    INITRD ../my-core.gz
+EOF
+
+% hdiutil detach /Volumes/BOOTABLE
+"disk9" ejected.
+```
+
+What we just did:
+
+1. attached the *disk.img* (in macos)
+2. created a gzipped cpio archive of our *beep* file in *beep.gz*
+3. overlayed *beep.gz* on top of base *core.gz* into a new *my-core.gz*
+4. updated config for bootloader to use *my-core.gz*
+5. detached *disk.img* to be ready for use
+
+Checking in QEMU, boot:
+
+```bash
+qemu-system-x86_64 -m 512M -drive file=disk.img,format=raw,index=0,media=disk -boot c \
+  -audiodev coreaudio,id=audio0 -machine pcspk-audiodev=audio0
+```
+
+And try in linux:
+
+```bash
+/beep -f 1500
+```
+
+You should hear a **BEEP** of different pitch.
+
+
+##### Scripts
+
+Let's check the boot process of the TinyCore linux: https://wiki.tinycorelinux.net/doku.php?id=wiki:the_boot_process.
+
