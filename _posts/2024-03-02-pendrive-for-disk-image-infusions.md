@@ -205,7 +205,7 @@ beep: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically 
 Now the overlay magic, follow the hands:
 
 ```bash
- % hdiutil attach disk.img
+% hdiutil attach disk.img
 /dev/disk9          	FDisk_partition_scheme
 /dev/disk9s1        	DOS_FAT_32                     	/Volumes/BOOTABLE
 % echo beep | cpio -o -H newc | gzip -2 > beep.gz
@@ -240,11 +240,15 @@ qemu-system-x86_64 -m 512M -drive file=disk.img,format=raw,index=0,media=disk -b
 And try in linux:
 
 ```bash
-/beep -f 1500
+/beep -f 1500 -l 1000 -d 5000 -r 3
 ```
 
-You should hear a **BEEP** of different pitch.
+You should hear 3 **BEEPs** of 1500Hz pitch with 5 second interval.
 
+##### (TODO) Playing WAV
+
+Some idea about upgrading from maritime sound signals to a voice: the pendrive can use *espeak* to speak or convert stdout and play it on the audio device
+of the box. Need to setup sound on tiny core linux.
 
 ##### Scripts
 
