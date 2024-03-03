@@ -360,6 +360,16 @@ sudo poweroff
 It works when *pv* is added (via overlay), here is an asciinema recording of it:
 https://asciinema.org/a/jAABMaC8QHzYHJNRr9krJJOjI
 
+This is the call:
+
+```bash
+qemu-system-x86_64 -m 512M \
+  -drive file=disk.img,format=raw,index=0,media=disk \
+  -boot c \
+  -drive file=target-big.img,if=none,id=nvm \
+  -device nvme,serial=deadbeef,drive=nvm -display curses
+```
+
 **NOTES:** after seeing the results of *pv* tool, I'm thiking of announcing the logs
 on a tcp port or broadcasting them or publishing to a remote server port...
 
