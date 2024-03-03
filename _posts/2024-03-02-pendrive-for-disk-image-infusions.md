@@ -252,5 +252,119 @@ of the box. Need to setup sound on tiny core linux.
 
 ##### Scripts
 
-Let's check the boot process of the TinyCore linux: https://wiki.tinycorelinux.net/doku.php?id=wiki:the_boot_process.
+Checking the boot process of the TinyCore linux https://wiki.tinycorelinux.net/doku.php?id=wiki:the_boot_process, I've ended
+up placing script in the */home/tc* and running it from *.profile*:
 
+```sh
+# Run only in interactive shells
+if [ ! -z "$PS1" ]; then
+    /home/tc/task.sh
+fi
+```
+
+The *task.sh*:
+
+```sh
+#!/bin/sh
+
+set -e
+
+. /etc/init.d/tc-functions
+
+./check-target.sh
+
+echo "${GREEN}Mounting payload partition...${NORMAL}"
+
+sudo mount /dev/sda1 /mnt
+
+echo "${GREEN}Infusing...${NORMAL}"
+
+echo "${YELLOW}"
+sudo dd if=/mnt/tails-amd64-6.0.img of=/dev/nvme0n1 bs=4M status=progress oflag=sync
+echo "${NORMAL}"
+
+echo "${GREEN}Done${NORMAL}"
+
+sleep 10
+
+sudo poweroff
+```
+
+And *check-target.sh*:
+
+```sh
+#!/bin/sh
+
+set -e
+
+. /etc/init.d/tc-functions
+
+echo "${GREEN}Checking...${NORMAL}"
+
+if cat /proc/partitions | grep nvme0n1 >/dev/null
+then
+    echo "${YELLOW}Target system detected${NORMAL}"
+    exit 0
+else
+    echo "${RED}No ${YELLOW}nvme0n1${RED} device detected${NORMAL}"
+    exit 1
+fi
+```
+
+I've placed *tails-amd64-6.0.img* (treating it as a *gold.img* during scripts development) in the *disk.img*.
+
+It appeared that *dd* version of Tiny Core Linux does not support `status=progress` flag, googling a bit for
+a workaround, I've found a *pv*, a [Pipe Viewer](http://www.ivarch.com/programs/pv.shtml) -- small utility to
+help me. Again, needs building. This time with configure+make. I will not repeat the build commands, they
+will differ only in installing *make* (this time I've made a *Dockerfile* for a builder image) and then
+configuring for a static 32 bit build:
+
+```bash
+./configure --enable-static CFLAGS=-m32
+```
+
+Here is the updated version of *task.sh*:
+
+```sh
+#!/bin/sh
+
+set -e
+
+. /etc/init.d/tc-functions
+
+./check-target.sh
+
+echo "${GREEN}Mounting payload partition...${NORMAL}"
+
+sudo mount /dev/sda1 /mnt
+
+echo "${MAGENTA}Infusing...${NORMAL}"
+
+echo -n "${CYAN}"
+img=tails-amd64-6.0.img
+src="/mnt/${img}"
+dst=/dev/nvme0n1
+total_size=$(ls -l "${src}" | awk '{ print $5 }')
+dd if="${src}" bs=4M \
+    | /pv --buffer-size 4096 --direct-io --name "${img}" --size "${total_size}" \
+    | sudo dd of="${dst}" bs=4M # oflag=sync
+echo -n "${NORMAL}"
+
+echo "${GREEN}Done${NORMAL}"
+
+sleep 10
+
+sudo poweroff
+```
+
+It works when *pv* is added (via overlay), here is an asciinema recording of it:
+https://asciinema.org/a/jAABMaC8QHzYHJNRr9krJJOjI
+
+**NOTES:** after seeing the results of *pv* tool, I'm thiking of announcing the logs
+on a tcp port or broadcasting them or publishing to a remote server port...
+
+**NOTE (2):** `-display curses` is a nice option for `qemu-system-*`.
+
+**NOTE (3):** I've dropped the code to a git repo, it must be accompanied by this post
+for now, but I have plans of making it fully automatic + tested (maybe even via github
+actions): https://github.com/aleksandr-vin/pfdii.
