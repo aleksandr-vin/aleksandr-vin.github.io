@@ -50,3 +50,21 @@ Then booting with QEMU is just:
 ```bash
 qemu-system-x86_64 -m 4G -hda disk.img -boot c -bios OVMF.fd
 ```
+
+## TO-CHECK:
+
+These look interetsting:
+
+```shell
+% find /opt/homebrew/ -name \*.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-i386-code.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-x86_64-secure-code.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-i386-vars.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-aarch64-code.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-arm-vars.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-i386-secure-code.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-x86_64-code.fd
+/opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-arm-code.fd
+```
+
+Interesting reading: [https://www.rodsbooks.com/efi-bootloaders/](https://www.rodsbooks.com/efi-bootloaders/).
