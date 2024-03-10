@@ -15,3 +15,10 @@ burden of installing VBR and MBR.
 The memory consumption increased with EFI boot, and init ramdisk was not fitting into 128M anymore. Plus linux started complaining about misalignment
 between architectures of EFI (64 bit) and linux (32 bit), which effected as not listing */dev/nvme0n1* device (in my test scenario). That forced me to
 move to TinyCore pure 64 bit, which also increased the memory requirements. I ended up using 256M and it works for me now.
+
+## Update
+
+1. Booting in system with Secure Boot enabled can be worked around using [PreLoader](http://www.rodsbooks.com/efi-bootloaders/secureboot.html#preloader).
+
+2. TinyCore linux provisions mounts in */etc/fstab* (not automount) when system boots, and it's wise to wait for the records to appear there and
+   then just `mount /mnt/sda2`.
