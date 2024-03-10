@@ -37,13 +37,18 @@ SHELL ["/bin/bash", "-c"]
 RUN cd edk2 && \
     source edksetup.sh && \
     make -C BaseTools && \
-    build -a X64 -t GCC5 -p OvmfPkg/OvmfPkgX64.dsc && \
-    GCC5_AARCH64_PREFIX=aarch64-linux-gnu- build -a AARCH64 -t GCC5 -p ArmVirtPkg/ArmVirtQemu.dsc
+    build -a X64 -t GCC5 -p OvmfPkg/OvmfPkgX64.dsc
 
 CMD ["cp", "-v", "/code/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd", "/out"]
 ```
 
-Build the image and get the file out by running the container and mounting current directory as */out*.
+Build the image and get the file out by running the container and mounting current directory as */out*:
+
+```bash
+docker build --platform=linux/amd64 -t pfdii-ovmf .
+
+docker run --rm --platform=linux/amd64 -v $(pwd):/out pfdii-ovmf
+```
 
 Then booting with QEMU is just:
 
@@ -51,9 +56,9 @@ Then booting with QEMU is just:
 qemu-system-x86_64 -m 4G -hda disk.img -boot c -bios OVMF.fd
 ```
 
-## TO-CHECK:
+## TBD
 
-These look interetsting:
+These files come with QEMU and look interetsting:
 
 ```shell
 % find /opt/homebrew/ -name \*.fd
@@ -67,4 +72,16 @@ These look interetsting:
 /opt/homebrew//Cellar/qemu/8.2.1/share/qemu/edk2-arm-code.fd
 ```
 
-Interesting reading: [https://www.rodsbooks.com/efi-bootloaders/](https://www.rodsbooks.com/efi-bootloaders/).
+I managed to run with a combination using:
+
+```
+-drive if=pflash,format=raw,readonly,file=$(find /opt/homebrew/ -name edk2-x86_64-code.fd) \
+-drive if=pflash,format=raw,file=$(find /opt/homebrew/ -name edk2-i386-vars.fd)
+```
+
+But it looks like that run overwritten the *edk2-i386-vars.fd* file inplace and failed to run more (need to investigate it more).
+
+
+## Reference reading
+
+1. [https://www.rodsbooks.com/efi-bootloaders/](https://www.rodsbooks.com/efi-bootloaders/).

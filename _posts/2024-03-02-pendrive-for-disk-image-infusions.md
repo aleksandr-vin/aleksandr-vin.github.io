@@ -358,7 +358,7 @@ sudo poweroff
 ```
 
 It works when *pv* is added (via overlay), here is an asciinema recording of it:
-https://asciinema.org/a/jAABMaC8QHzYHJNRr9krJJOjI
+[https://asciinema.org/a/jAABMaC8QHzYHJNRr9krJJOjI](https://asciinema.org/a/jAABMaC8QHzYHJNRr9krJJOjI).
 
 This is the call:
 
@@ -377,4 +377,4 @@ on a tcp port or broadcasting them or publishing to a remote server port...
 
 **NOTE (3):** I've dropped the code to a git repo, it must be accompanied by this post
 for now, but I have plans of making it fully automatic + tested (maybe even via github
-actions): https://github.com/aleksandr-vin/pfdii.
+actions): [https://github.com/aleksandr-vin/pfdii](https://github.com/aleksandr-vin/pfdii).
