@@ -46,6 +46,9 @@ There is a way to send message from
 but that technique simply did not work. [My question](https://developer.apple.com/forums/thread/708820?login%253Dtrue%2526page%253D1#775559022)
 in apple support forum.
 
+**UPDATE:** it works, but could be silently not working with non-SSL (http) or localhost or not production extension build (?) -- it just appeared
+to be working with real domain name...
+
 
 ### 4. Login on your site and then window.open options page + `#access-token=xyz`
 
