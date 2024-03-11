@@ -13,7 +13,7 @@ when you're travelling can be handy. Sometimes it helps even when you're at home
 
 2. If key is compromised, there should be a procedure to keep docs safe
 
-3. Access/decryption should be available by Yubikey
+3. Access/decryption should be available by Yubikey. Check WebAPI to perform all the decryption locally in the browser.
 
 
 ## Concept
