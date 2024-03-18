@@ -3,10 +3,9 @@ title: "Deepmind.ai and Hugging Face Course"
 tags: ai transformers learning huggingface deepmind llm models
 ---
 
-Started watching a course:
-[https://learn.deeplearning.ai/courses/open-source-models-hugging-face](https://learn.deeplearning.ai/courses/open-source-models-hugging-face).
+Jumped over a short course on deeplearning.ai [open-source-models-hugging-face](https://learn.deeplearning.ai/courses/open-source-models-hugging-face).
 
-Note: same day a [podcast episode about Hugging Face went online](https://syntax.fm/show/740/local-ai-models-in-javascript-machine-learning-deep-dive-with-xenova) on Syntax :)
+Note: same day, when I've started it (11-03-2024), a [podcast episode about Hugging Face went online](https://syntax.fm/show/740/local-ai-models-in-javascript-machine-learning-deep-dive-with-xenova) on Syntax :)
 
 ## UPDATE
 
@@ -39,3 +38,13 @@ Loading checkpoint shards:  33%|████████████████
 /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
   warnings.warn('resource_tracker: There appear to be %d '
 ```
+
+## Notes
+
+1. [Streamlit](https://cheat-sheet.streamlit.app) -- making easy data web apps.
+
+2. [SAM](https://segment-anything.com)
+
+3. This course is over, and next is [mlops professional by Intel](https://learning.intel.com/developer/pages/133/mlops-professional)
+
+4. And more [short courses deeplearning.ai](https://learn.deeplearning.ai)
