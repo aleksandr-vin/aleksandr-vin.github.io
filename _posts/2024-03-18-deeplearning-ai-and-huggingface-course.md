@@ -1,6 +1,6 @@
 ---
-title: "Deepmind.ai and Hugging Face Course"
-tags: ai transformers learning huggingface deepmind llm models
+title: "Deeplearning.ai and Hugging Face Course"
+tags: ai transformers learning huggingface ml llm models
 ---
 
 Jumped over a short course on deeplearning.ai [open-source-models-hugging-face](https://learn.deeplearning.ai/courses/open-source-models-hugging-face).
