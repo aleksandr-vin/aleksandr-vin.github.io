@@ -15,3 +15,7 @@ permalink: /help/
 - [https://aleksandr.vin/katana-map/](https://aleksandr.vin/katana-map/) --- map & catalog of samurai swords exhibitions
 - [https://aleksandr.vin/bulls-n-cows/](https://aleksandr.vin/bulls-n-cows/) --- Bulls'n'cows game
 - [https://polvetra.club](https://polvetra.club) --- boat assignment app **WIP**
+
+### Docs
+
+- _[Dronebewijs](/files/UAS-A1-A3-certificate-21614701.pdf)_ --- UAS A1/A3 Certificate
