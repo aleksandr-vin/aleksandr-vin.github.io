@@ -19,3 +19,7 @@ permalink: /help/
 ### Docs
 
 - _[Dronebewijs](/files/UAS-A1-A3-certificate-21614701.pdf)_ --- UAS A1/A3 Certificate
+
+### Checklists
+
+- [UAS Safety Checklist](/files/231122_SAFETY_CHECKLIST-EN.pdf) --- plan to fly your UAS
