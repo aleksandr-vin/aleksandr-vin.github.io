@@ -19,7 +19,7 @@ Parameters are:
 6. AUX range min
 6. AUX range max
 
-In short all this worked well for Mobula6 (messed up min max ranges at the beginning, but then corrected that), where I had this:
+In short all this worked well for Mobula6 (messed up min max ranges at the beginning), where I had this:
 ![VTX page on Mobula6](/img/Screenshot 2024-09-01 at 13.35.47.png)
 
 And I set 6 position buttons on Boxer like this:
@@ -38,7 +38,7 @@ Skipping power level labeled `RCE` because it was changing the channel or band s
 
 BTW, power level **values** are mW converted to dBm (at least for SmartAudio 2.1 as I heard [here](https://www.youtube.com/watch?v=thR2XA_0PLM)).
 
-Then in Tinyhawk it did not for the last power value. I had this for Tinyhawk:
+Then in Tinyhawk it did not work for the last power value. I had this for Tinyhawk:
 ![VTX page on Tinyhawk](/img/Screenshot 2024-09-01 at 13.02.22.png)
 
 That's exactly 4 values that this VTX supports and I applied commands in cli:
@@ -66,7 +66,7 @@ And all with power value index 4 were failing!
 Trying to search the Internet I didn't find any answer or clue. I tried changing to 0-1-2-3 values as JB mentioned for 2.0 SmartAudio, but that
 did not work.
 
-Then I thought if that's an border bug with the array len, when you compare index to array len and miss the start-from-zero. I added one more
+Then I thought if that's a border bug with the array len, when you compare index to array len and miss the start-from-zero. I added one more
 power value, dubbed it...
 
 ```
