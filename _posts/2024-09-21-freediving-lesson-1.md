@@ -7,7 +7,7 @@ Did first lesson on freediving today. Didn't do eLearning before the lesson and 
 when packing for the lesson: took kids swimming shirt by mistake and forgot to take slippers and a towel. But
 did surprise everyone. First attempt was till an urge to breath: 1.27. Second was a 2:34 -- instructor did
 support me on last seconds by talking to me and asking to do some things. And for the third attempt I had a
-plan: to visualize how I'm am entering my house, going upstairs by stairs. And it worked: I heared instructor
+plan: to visualize how I'm entering my house, going upstairs by stairs. And it worked: I heared instructor
 talking but didn't listen (I've asked him to support me with talking about something), and I was busy with going
 upstairs. I was very slow and it took time to concentrate on stepping up the stairs. When I reached 1st floor,
 I started going to the 2nd. I think around that time I was already fighting with the urge to breath. But I kept
@@ -19,7 +19,7 @@ such direct as at the beginning, quite opposite to what I was feeling at the tim
 it right -- I was able to go down both floors and eventually raised from the water and started rehab. breathing.
 That was the moment I felt hard, probably because I was turning on my feelings and other systems. I did more
 than 3 *HO-PE* breaths (fast breath in, mouth close and breath out), felt a little bit disorienting, caught some
-from water, took my mask off and caughed. Both instructors and second cursist were surprised and asking me WTF
+water, took my mask off and caughed. Both instructors and second cursist were surprised and asking me WTF
 was I doing. It was 4:32.
 
 And I really enjoyed it!
