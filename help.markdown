@@ -14,7 +14,6 @@ permalink: /help/
 - [https://aleksandr.vin/videoplayer/#](https://aleksandr.vin/videoplayer/#) --- watch video file in browser
 - [https://aleksandr.vin/katana-map/](https://aleksandr.vin/katana-map/) --- map & catalog of samurai swords exhibitions
 - [https://aleksandr.vin/bulls-n-cows/](https://aleksandr.vin/bulls-n-cows/) --- Bulls'n'cows game
-- [https://polvetra.club](https://polvetra.club) --- boat assignment app **WIP**
 
 ### Docs
 
