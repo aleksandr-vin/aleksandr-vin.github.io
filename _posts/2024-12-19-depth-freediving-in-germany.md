@@ -11,11 +11,11 @@ Made 35dives, with total surface time 2:25' and 22'26" dive time. Max depth 17.1
 I've set computer to count dives from 1m as on last training session it counted 60 dives in one hour,
 triggerring every move of my hand below .5m.
 
-{% include vimeoPlayer.html id="1040755262/74c0a91f2b" %}
+{% include vimeoPlayer.html id="1040755262?h=74c0a91f2b" %}
 
-{% include vimeoPlayer.html id="1040755389/abe0feccda" %}
+{% include vimeoPlayer.html id="1040755389?h=abe0feccda" %}
 
-{% include vimeoPlayer.html id="1040755508/22cb9e7632" %}
+{% include vimeoPlayer.html id="1040755508?h=22cb9e7632" %}
 
 Same videos on [gopro site](https://gopro.com/v/ezlkDQo9ypy5J).
 
