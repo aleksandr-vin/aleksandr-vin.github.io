@@ -3,7 +3,7 @@ title: "Flat Iron Steak In the Oven, Attempt Nr.2"
 tags: cooking recipes steaks flat-iron tips
 ---
 
-Got a flat-iron steak from Sligro on 30th of Dec. Cooked it in the oven on 6th of Jan. Need to repeat.
+Second attempt with flat-iron steak from Sligro in the oven on 6th of Jan. Need to repeat.
 
 ![Ready for cooking](/img/IMG_9409.jpg)
 
