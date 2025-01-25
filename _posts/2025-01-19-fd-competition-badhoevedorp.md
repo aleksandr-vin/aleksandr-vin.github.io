@@ -207,3 +207,16 @@ with WR in DNF, I was very impressed!
 
 #### The team
 ![Three freedivers](/img/DB10A964-096D-484F-B01E-2FC36E925576.JPG)
+
+## Conclusions
+
+1. Pay attention to the **recovery breathing**: it slipped away from my attention in last weeks, and as I can see
+   it didn't become second nature, I need to focus on training **proper** recovery breathing and make it an automatic action.
+
+2. Do not close my eyes during the attempt. Coach said that's a common advice, as without eyesight I will lose connection
+   to the reality.
+
+3. Set goals of achieving white cards and performing at 80%. Learning the process and feeling naturally at competitions.
+
+4. Think about the knees of the wetsuit: looks like I rubbed them on my new wetsuit, should I use a cheap wetsuit for STA
+   or pay attention for kneeling position?
