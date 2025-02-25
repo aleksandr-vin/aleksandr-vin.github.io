@@ -5,6 +5,8 @@ tags: wetsuite diving fun tutorials
 
 I'm not putting it alone (yet)!
 
+*\[You'll need **vaseline** to remove it\]*
+
 {% include vimeoPlayer.html id="1060057432" %}
 
 Ordered from [Elios](http://eliossub.com).
