@@ -28,6 +28,7 @@ tags: browser-tabs
 1. https://www.planet.com
 1. https://www.originaldiving.com/blog/diving-the-pit-mexico
 1. https://www.ted.com/talks/stephen_deberry_why_the_wrong_side_of_the_tracks_is_usually_the_east_side_of_cities
+1. https://www.ted.com/talks/sonaar_luthra_we_need_to_track_the_world_s_water_like_we_track_the_weather
 
 ## Life
 
@@ -35,3 +36,6 @@ tags: browser-tabs
 1. https://academy.donnaschwartzmusic.com/courses/improvisation-made-easy-elite-group-coaching-program/
 1. https://kino.pub/item/view/70783/s0e1
 1. https://www.amazon.nl/gp/css/order-history?ref_=nav_orders_first
+1. https://www.aalscholvers.nl/product/under-pressure/
+1. https://en.wikipedia.org/wiki/Tao_Te_Ching
+1. https://archive.org/details/bluehopeexplorin0000earl/
