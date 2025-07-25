@@ -8,7 +8,7 @@ This is a series of steps with media, which I decided to make as GIFs. I've capt
 necessary steps, which I need to cut into parts, add some transformations (like zooming in and out effects) and make final GIF files
 per part.
 
-Editiing video in FCP and then, sharing it to Compressor app, to export it in the desired format. I've found that Apple 
+Editiing video in FCP and then, sharing it to Compressor app, to export it in the desired format. I've found that Apple
 Compressor app does a poor-to-average job with GIF exports, due to lack of control over the palette it creates, which is deemed to be
 limited to 256 colors.
 
@@ -40,26 +40,34 @@ This is the code for the script:
 #
 # Credits to http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
 
-if [[ "$1" != *.mp4 ]]
+set -e
+
+VIDEO_FORMAT=mp4
+
+if [[ "$1" != *."${VIDEO_FORMAT}" ]]
 then
   echo File type not supported
   exit 11
 fi
 
-palette="/tmp/create-gif-automator-palette.png"
+tmp_file=$(mktemp -t palette)
+palette="${tmp_file}.png"
+
+mv "${tmp_file}" "${palette}"
+
+output_dir=.
+output_filename="$(basename "${1%%."${VIDEO_FORMAT}"}.gif")"
+
+FFMPEG=/opt/homebrew/bin/ffmpeg
+
 filters="fps=15,scale=-1:-1:flags=lanczos"
 
-output_dir="/Users/aleksandrvin/Developer/marktplaats-gpt-site/src/assets/get-started"
-output_filename="$(basename "${1%%.mp4}.gif")"
-
-/opt/homebrew/bin/ffmpeg -i "$1" -vf "$filters,palettegen" -y "$palette"
+"${FFMPEG}" -i "$1" -filter "$filters,palettegen" -y "$palette"
 logger -t gif-creator-script "Palette stored in \"$palette\""
 
-/opt/homebrew/bin/ffmpeg -i "$1" -i "$palette" -lavfi "$filters [x]; [x][1:v] paletteuse" -y "$output_dir/$output_filename"
+FFMPEG -i "$1" -i "$palette" -lavfi "$filters [x]; [x][1:v] paletteuse" -y "$output_dir/$output_filename"
 logger -t gif-creator-script "Creating GIF \"$output_filename\" from \"$1\""
 
-rm "$1"
-logger -t gif-creator-script "Original file \"$1\" removed"
 ```
 
 PS. Do not transfort your video on keyframes until you move the transform anchor to a point of interest of the clip,
