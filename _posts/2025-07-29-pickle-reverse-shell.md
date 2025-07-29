@@ -1,9 +1,9 @@
 ---
-title: "Reverse shell with pickle bomb"
+title: "Reverse shell with pickle"
 tags: python, pickle, reverse-shell
 ---
 
-Reverse shell with pickle bomb.
+Reverse shell with pickle.
 
 ![rshell test](/img/Screenshot%202025-07-29%20at%2001.55.02.png)
 
