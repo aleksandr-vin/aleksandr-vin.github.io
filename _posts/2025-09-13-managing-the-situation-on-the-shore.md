@@ -10,7 +10,7 @@ tags: diving, rescue, efr, help, courses
 1. Noticing a diver in the water, ask him to inflate his BCD, and KEEP EYES ON HIM
 2. DO NOT turn away and:
    1. ask 2 guys nearby (preferably by name) to lock a bearing on the diver from both sides from you (15-20 meters from you).
-   2. ask 3rd guy to get fins, snorkel and mask and swim to the diver.
+   2. ask 3rd guy to get fins, snorkel, mask and flotation device and swim to the diver.
    3. ask first 2 guys if they have the bearing locked.
       1. Only when they confirm it, you can turn your eyes off the diver and continue organization on the shore.
 
@@ -46,7 +46,8 @@ tags: diving, rescue, efr, help, courses
        2. bottom time,
        3. any warnings
        4. was it air or Nitrox
-       5. and keep it close to the diver.
+       5. was there other dives today?
+       6. and keep it close to the diver.
     2. also to check what remaining pressure is on the diver’s scuba set and if it is working.
 21. You wait for ambulance and can make a spot area clean of other scuba sets etc. (EMS take a lot of space!)
 
