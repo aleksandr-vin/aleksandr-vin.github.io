@@ -9,5 +9,6 @@ repos:
   rev: 0.2.0
   hooks:
   - id: texcret
+    entry: env PINENTRY=pinentry-mac texcret texcret --in-file --force-secrets --no-arg-passwords --password -
     args: ["--origin", "https://aleksandr.vin"]
   - id: texcret-check-markers
