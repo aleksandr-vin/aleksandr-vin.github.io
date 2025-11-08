@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Detexcret current file",
+      "type": "shell",
+      "command": "texcret",
+      "args": [
+        "detexcret",
+        "--in-file",
+        "--origin",
+        "https://aleksandr.vin",
+        "--password",
+        "-",
+        "${file}"
+      ],
+      "options": {
+        "env": {
+          "PINENTRY": "pinentry-mac"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Texcret current file",
+      "type": "shell",
+      "command": "texcret",
+      "args": [
+        "texcret",
+        "--in-file",
+        "--force-secrets",
+        "--origin",
+        "https://aleksandr.vin",
+        "--password",
+        "-",
+        "${file}"
+      ],
+      "options": {
+        "env": {
+          "PINENTRY": "pinentry-mac"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      }
+    }
+  ]
+}
