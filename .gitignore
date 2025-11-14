@@ -6,3 +6,6 @@ vendor
 *.HEIC
 *.heic
 .DS_Store
+.ipynb_checkpoints
+xxx-*
+__pycache__
