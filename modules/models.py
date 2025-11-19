@@ -3,7 +3,6 @@ from enum import Enum
 
 from pydantic import (
     BaseModel,
-    PastDate,
     PositiveInt,
     NegativeInt,
     AwareDatetime,
@@ -29,7 +28,7 @@ class BaseRec(BaseModel):
 
 class BuyRec(BaseRec):
     # {'buy': '25-07-2025', ...}
-    buy: PastDate
+    buy: date
     plan: str
     ticket: str
     datetime_in: date | AwareDatetime = Field(alias="datetime-in")
@@ -38,11 +37,12 @@ class BuyRec(BaseRec):
     price: float
     currency: Currencies
     exit_plan: str = Field(alias="exit-plan")
+    fee: float | None = None
 
 
 class SellRec(BaseRec):
     # {'sell': '12-08-2025', ...}
-    sell: PastDate
+    sell: date
     plan: str
     description: str
     ticket: str
@@ -52,11 +52,12 @@ class SellRec(BaseRec):
     price: float
     currency: Currencies
     realised_plan: str = Field(alias="realised-plan")
+    fee: float | None = None
 
 
 class DecisionRec(BaseRec):
     # {'decision': '21-05-2025', ...}
-    decision: PastDate
+    decision: date
     plan: str
     description: str
     datetime_in: date | AwareDatetime = Field(alias="datetime-in")
