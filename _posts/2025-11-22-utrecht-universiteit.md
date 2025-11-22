@@ -12,4 +12,4 @@ is one of the things I like here, in the Netherlands: dutch girls speaking. I'm 
 enlightment, that I decided to write it down here. And I like Utrecht, it's different to Amsterdam and it
 is full of students. The correlion is playing non-stop today. I wish I can be a student here.
 
-{% include myPlayerPortrait.html id="IMG_2667.MOV" %}
+{% include myVideoPlayer.html id="IMG_2667.MOV" width="500" height="890" %}
