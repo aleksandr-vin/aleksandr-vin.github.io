@@ -1,3 +1,4 @@
+---
 title: "A token in life"
 tags: life, boredome, stagnation, world, purpose of life
 ---

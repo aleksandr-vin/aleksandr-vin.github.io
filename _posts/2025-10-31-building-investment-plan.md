@@ -1,3 +1,4 @@
+---
 title: "Building investment plan"
 tags: investment, plans, learning
 ---

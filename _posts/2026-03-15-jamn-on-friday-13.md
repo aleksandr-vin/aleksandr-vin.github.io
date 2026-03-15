@@ -1,3 +1,4 @@
+---
 title: "Jam'n on Friday 13"
 tags: music, jaming, jams, sax, bassguitar, friday, fun
 ---
