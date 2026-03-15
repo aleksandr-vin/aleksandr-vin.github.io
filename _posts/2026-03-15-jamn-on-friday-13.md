@@ -14,6 +14,8 @@ A little bit EQ in DaVinchi Resolve
 
 ![EQ in DaVinchi Resolve](/img/jamn-on-friday-13-EQ.png)
 
-and here we go [on bandcamp](https://vinokurov.bandcamp.com/album/jamn-on-friday-13).
+and here we go on [bandcamp](https://vinokurov.bandcamp.com/album/jamn-on-friday-13):
+
+{% include bandcamp.html href="https://vinokurov.bandcamp.com/album/jamn-on-friday-13" text="Jam&#39;n on Friday 13 by Julián Ros, Sandro Vin" %}
 
 It was a lot of fun and I already want to do it again!!!
