@@ -2,5 +2,5 @@
 layout: redirect
 title: CV
 permalink: /CV/
-redirect_to: "/files/CV.Aleksandr.Vinokurov.October.2023.pdf"
+redirect_to: "/files/CV.Aleksandr.Vinokurov.April.2026.pdf"
 ---
